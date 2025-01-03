@@ -1,5 +1,12 @@
 [
     {
+        "url": "./retos/reto-20/index.html",
+        "imgUrl":"./retos/reto-20/conference-ticket-generator-main/preview.jpg",
+        "name": "conference ticket generator",
+        "description": "Estamos en construcción",
+        "filter": "Junior"
+    },
+    {
         "url": "./retos/reto-19/index.html",
         "imgUrl":"./retos/reto-19/space-tourism-website-main/designs/crew.jpg",
         "name": "Tipspace tourism ebsite",

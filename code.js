@@ -20,7 +20,7 @@ var home;
         d1.innerHTML = `${data[0].description}`;
         d2.innerHTML = `${data[1].description}`;
         f1.innerText = `${data[0].filter}`;
-        f2.innerText = `${data[2].filter}`;
+        f2.innerText = `${data[1].filter}`;
         url1.href = `/retos-js-ts/${data[0].url}`;
         url2.href = `/retos-js-ts/${data[1].url}`;
     })
