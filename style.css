@@ -246,7 +246,7 @@ footer{
     }
 
     .photo-mobile{
-        width: 137px;
+        width: 120px;
         height: 100px;
         display: block;
         padding: 2px;
@@ -254,6 +254,7 @@ footer{
 
     .challenge-img{
         border-radius: 20px 20px 0 0;
+        max-width: 100%;
     }
 
     .landing-description, .last-challenge{
