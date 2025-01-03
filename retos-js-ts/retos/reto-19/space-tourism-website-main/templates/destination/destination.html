@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style-destination.css">
+  <link rel="stylesheet" href="../../global.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+  
+  <title>Space tourism website</title>
+</head>
+<body>
+
+  <header>
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+    <nav class="nav">
+      <ul class="list">
+        <li class="item"><a href="../../../index.html" class="nav-menu"><span class="number-nav">00</span> HOME</a></li>
+        <li class="item item-border-bottom"><a href="./destination.html" class="nav-menu"><span class="number-nav">01</span> DESTINATION</a></li>
+        <li class="item"><a href="../../templates/crew/crew.html" class="nav-menu"><span class="number-nav">02</span> CREW</a></li>
+        <li class="item"><a href="../../templates/technology/technology.html" class="nav-menu"><span class="number-nav">03</span> TECHNOLOGY</a></li>
+      </ul>
+      <ul class="list-mobile list-mobile-close">
+        <img class="list-mobile-img list-mobile-img-close" src="../../assets/shared/icon-hamburger.svg" alt="hamburger icon">
+        <div class="items items-close">
+          <li class="item-mobile"><a href="../../../index.html"><span class="number-nav">00</span> HOME</a></li>
+          <li class="item-mobile"><a href="./destination.html"><span class="number-nav">01</span> DESTINATION</a></li>
+          <li class="item-mobile"><a href="../crew/crew.html"><span class="number-nav">02</span> CREW</a></li>
+          <li class="item-mobile"><a href="../technology/technology.html"><span class="number-nav">03</span> TECHNOLOGY</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="planet">
+        <p class="text-pick"><span class="number-planet">01</span> PICK YOUR DESTINATION</p>
+        <img src="../../assets/destination/image-moon.png" alt="moon" class="planet-img">
+      </section>
+      <section class="information">
+        <nav class="planets">
+          <li class="button moon button-active" id="Moon">MOON</li>
+          <li class="button mars" id="Mars">MARS</li>
+          <li class="button eurpoa" id="Europa">EUROPA</li>
+          <li class="button titan" id="Titan">TITAN</li>
+        </nav>
+        <p class="planet-name">MOON</p>
+        <article class="planet-info">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</article>
+        <div class="info-extra">
+          <div class="distance">
+            <p class="avg-distance">AVG. DISTANCE</p>
+            <p class="km">384,400 KM</p>
+          </div>
+          <div class="travel-time">
+            <p class="travel">EST. TRAVEL TIME</p>
+            <p class="time">3 DAYS</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="distribution.js"></script>
+  <footer>
+    <p>Challenge by <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Frontendmentor</a>. Coded by <a href="https://github.com/JuSeRDev">JuSeRDev</a> and <a href="https://github.com/isAlvarezDev">isAlvarezDev</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /*Primary*/
+
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /*Neutral*/
+
+    --Dark-gray: hsl(0, 0%, 59%);
+
+    /*Body Copy*/
+
+    --font-size-name-and-stats: 18px;
+
+    --font: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: 130% 350%, -40% -500%;
+    background-color: var(--Dark-cyan);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    box-shadow: 2px 2px 50px var(--Dark-gray);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: repeat-x;
+    background-color: white;
+}
+
+img {
+    margin-top: 25%;
+    border-radius: 50%;
+    border: 10px solid white;
+}
+
+.name {
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.name h1 {
+    padding: 10px;
+}
+
+h1 {
+    font-family: var(--font);
+    font-size: var(--font-size-name-and-stats);
+    color: var(--Very-dark-desaturated-blue);
+}
+
+span {
+    font-family: var(--font);
+    color: var(--Dark-cyan);
+    font-weight: 400;
+}
+
+p {
+    font-family: var(--font);
+    font-size: 10px;
+    color: var(--Dark-cyan);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.469);
+    width: 100%;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 800px) {
+    body {
+        background-position: 330% 650%, -200% -650%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-position: -50% 650%, 150% -650%;
+    }
+}

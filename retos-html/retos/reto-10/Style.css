@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: 20px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    --font: 'Poppins', sans-serif;
+
+    /*Color Primary*/
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /*### Neutral*/
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+h1 {
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.container-title {
+    width: 85vw;
+    text-align: center;
+    margin: 70px 0 70px 0;
+}
+
+
+span {
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+
+.title p {
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+    padding: 0 10px 0 10px;
+    margin-top: 20px;
+}
+
+.container-cards {
+    width: 85%;
+}
+
+.card {
+    padding: 30px;
+    box-shadow: 2px 2px 30px rgba(128, 128, 128, 0.432);
+    margin-top: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+h3 {
+    color: var(--Very-Dark-Blue);
+}
+
+p {
+    font-size: 12px;
+    color: var(--Grayish-Blue);
+}
+
+.cyan {border-top: 4px solid var(--Cyan);}
+.red {border-top: 4px solid var(--Red);}
+.orange {border-top: 4px solid var(--Orange);}
+.blue {border-top: 4px solid var(--Blue);}
+
+.img {
+    margin-top: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+@media screen and (min-width: 900px) {
+    .container-title {
+        max-width: 500px;
+    }
+
+    .container-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+    }
+
+    .card {
+        width: 350px;
+        height: 250px;
+        margin: 20px;
+    }
+
+    .card-center {
+        margin: 0;
+    }
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

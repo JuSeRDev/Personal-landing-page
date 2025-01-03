@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+
+    --font: "Plus Jakarta Sans", sans-serif;
+
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Red: #f65351;
+    --Blue: #0a317b;
+
+    /* ### Neutral */
+
+    --White: #ffffff;
+    --Very-light-grayish-blue: #f7fafd;
+    --Light-grayish-blue-1: #e5effa;
+    --Light-grayis-blue-2: #dde7ee;
+    --Light-grayis-blue-shadow: #cedde9;
+    --background: #F7FAFC;
+    --Grayish-blue: #939dae;
+    --Dark-grayish-blue: #5e6778;
+    --Very-dark-blue: #1c202b;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--Light-grayis-blue-1);
+    color: var(--Dark-grayish-blue);
+    padding: 20px;
+}
+
+.all-read{
+    cursor: pointer;
+}
+
+.all-read:hover{
+    color: var(--Blue);
+}
+
+.container{
+    padding: 40px 20px 15px 20px;
+    background: var(--White);
+    max-width: 750px;
+
+    border-radius: 15px;
+    box-shadow: 5px 5px 30px var(--Light-grayis-blue-shadow);
+}
+
+.container-notification{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-count{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: flex-end;
+}
+
+.notification-text{
+    color: var(--Very-dark-blue);
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.count{
+    color: var(--White);
+    background: var(--Blue);
+    padding: 0px 15px;
+    margin-left: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.notification{
+    border-radius: 10px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-active{
+    background: var(--background);
+}
+
+.notification-info{
+    display: flex;
+    align-items: center;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;
+    gap: 3px;
+}
+
+.name{
+    color: var(--Very-dark-blue);
+    font-weight: 800;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.name:hover{
+    color: var(--Blue);
+}
+
+.post{
+    margin-left: 5px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.post:hover{
+    color: var(--Blue);
+}
+
+.group{
+    color: var(--Blue);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.photo, .pick{
+    width: 45px;
+    height: 45px;
+}
+
+.pick{
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.message{
+    border: 1px solid var(--Light-grayish-blue-1);
+    margin: 10px 10px 0px 65px;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.message:hover{
+    background: var(--Light-grayis-blue-2);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

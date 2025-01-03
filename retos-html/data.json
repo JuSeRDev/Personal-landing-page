@@ -1,0 +1,128 @@
+[
+    {
+        "url": "./retos/reto-18/index.html",
+        "imgUrl":"./retos/reto-18/design/desktop-preview.jpg",
+        "name": "Fylo landing page with two column layout",
+        "description": "Landing page de Fylo con un diseño de dos columnas que equilibra información visual y textual de manera eficiente.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-17/index.html",
+        "imgUrl":"./retos/reto-17/design/desktop-preview.jpg",
+        "name": "Fylo landing page with two column layout",
+        "description": "Landing page que destaca los servicios de Fylo con un diseño de dos columnas moderno y funcional.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-16/index.html",
+        "imgUrl":"./retos/reto-16/design/desktop-preview.jpg",
+        "name": "Huddle landing page with alternating feature blocks",
+        "description": "Página de Huddle con bloques de características alternados que crean un diseño dinámico y atractivo.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-15/index.html",
+        "imgUrl":"./retos/reto-15/design/desktop-preview.jpg",
+        "name": "Clipboard landing page",
+        "description": "Landing page de Clipboard que combina diseño limpio y funcionalidad para destacar características clave del producto.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-14/index.html",
+        "imgUrl":"./retos/reto-14/design/desktop-design.jpg",
+        "name": "Fylo data storage component",
+        "description": "Componente que presenta soluciones de almacenamiento de datos de Fylo con un diseño visualmente equilibrado.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-13/index.html",
+        "imgUrl":"./retos/reto-13/design/desktop-design.jpg",
+        "name": "Testimonials grid section",
+        "description": "Sección de cuadrícula que muestra testimonios de usuarios con un diseño limpio y bien organizado.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-12/index.html",
+        "imgUrl":"./retos/reto-12/design/desktop-design.jpg",
+        "name": "Huddle landing page with single introductory section",
+        "description": "Landing page con un diseño limpio que destaca un mensaje principal acompañado de un llamado a la acción claro.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-11/index.html",
+        "imgUrl":"./retos/reto-11/design/desktop-design.jpg",
+        "name": "Single Price Grid Component",
+        "description": "Componente de tabla de precios que organiza la información de manera clara y centrada en la usabilidad.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-10/index.html",
+        "imgUrl":"./retos/reto-10/design/desktop-design.jpg",
+        "name": "Four card feature section",
+        "description": "Sección destacada compuesta por cuatro tarjetas con información clave, diseñadas para captar la atención del usuario.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-9/index.html",
+        "imgUrl":"./retos/reto-9/design/desktop-design.jpg",
+        "name": "Profile card component",
+        "description": "Componente de tarjeta de perfil minimalista, ideal para mostrar información personal y profesional.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-8/index.html",
+        "imgUrl":"./retos/reto-8/design/desktop-design.jpg",
+        "name": "3-column preview card component",
+        "description": "Diseño dividido en tres columnas que destaca características importantes de manera visualmente equilibrada.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-7/index.html",
+        "imgUrl":"./retos/reto-7/design/desktop-design.jpg",
+        "name": "Stats preview card component",
+        "description": "Tarjetas de vista previa de estadísticas que combinan datos importantes con un diseño moderno.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-6/index.html",
+        "imgUrl":"./retos/reto-6/design/desktop-design.jpg",
+        "name": "Social proof section",
+        "description": "Sección diseñada para generar confianza mediante testimonios y reseñas de usuarios.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-5/index.html",
+        "imgUrl":"./retos/reto-5/design/desktop-design.jpg",
+        "name": "Product preview card component",
+        "description": "Tarjeta de vista previa de producto que combina imágenes y detalles clave para destacar artículos de interés.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-4/index.html",
+        "imgUrl":"./retos/reto-4/design/desktop-design.jpg",
+        "name": "Order summary card",
+        "description": "Componente diseñado para mostrar un resumen de pedido con información esencial de manera clara y atractiva.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-3/index.html",
+        "imgUrl":"./retos/reto-3/design/desktop-design.jpg",
+        "name": "Results NFT preview card component",
+        "description": "Diseño que combina creatividad y funcionalidad para mostrar una tarjeta NFT con un estilo único.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-2/index.html",
+        "imgUrl":"./retos/reto-2/design/desktop-design.jpg",
+        "name": "Results summary component",
+        "description": "Componente que presenta un resumen de resultados con un diseño bien estructurado y visualmente atractivo.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-1/index.html",
+        "imgUrl":"./retos/reto-1/design/desktop-design.jpg",
+        "name": "QR code component",
+        "description": "Componente simple y efectivo con un código QR como elemento principal, acompañado de detalles relevantes.",
+        "filter": "Newbie"
+    }
+]
