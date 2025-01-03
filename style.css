@@ -74,7 +74,6 @@ body{
 
 .lenguajes{
     display: flex;
-    justify-content: flex-start;
     gap: 10px;
     width: 100%;
 }
@@ -127,7 +126,7 @@ body{
 .challenge-img{
     max-width: 355px;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
 }
 
 .container-description{
@@ -152,7 +151,7 @@ body{
 }
 
 .ts, .git{
-    width: 30px;
+    width: 20px;
 }
 
 .cards{
