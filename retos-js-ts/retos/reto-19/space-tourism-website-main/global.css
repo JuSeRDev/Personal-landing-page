@@ -154,10 +154,12 @@ footer a {
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
         width: 50vw;
         height: 100dvh;
         list-style: none;
         text-align: center;
+        z-index: 20;
     }
     
     .list-mobile-img {
