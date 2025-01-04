@@ -1,4 +1,13 @@
 "use strict";
+import { changeBgImg, displayMenu } from "../modules/index.js";
+
+changeBgImg('destination', false)
+
+const closeMenu = document.querySelector('.list-mobile')
+const items = document.querySelector('.items')
+const menuImg = document.querySelector('.list-mobile-img')
+let isClose = true
+
 var spaceTourism;
 (function (spaceTourism) {
     const moon = document.querySelector(".moon");
@@ -36,3 +45,8 @@ var spaceTourism;
         click(titan);
     });
 })(spaceTourism || (spaceTourism = {}));
+
+menuImg.addEventListener('click', () => {
+  isClose = !isClose
+  displayMenu(closeMenu, items, menuImg, isClose, false)
+})
