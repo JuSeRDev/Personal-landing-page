@@ -158,8 +158,6 @@ footer a {
         height: 100dvh;
         list-style: none;
         text-align: center;
-        position: relative;
-        z-index: 10;
     }
     
     .list-mobile-img {
