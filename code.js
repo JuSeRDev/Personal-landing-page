@@ -21,8 +21,8 @@ var home;
         d2.innerHTML = `${data[1].description}`;
         f1.innerText = `${data[0].filter}`;
         f2.innerText = `${data[1].filter}`;
-        url1.href = `/retos-js-ts/${data[0].url}`;
-        url2.href = `/retos-js-ts/${data[1].url}`;
+        url1.href = `./retos-js-ts/${data[0].url}`;
+        url2.href = `./retos-js-ts/${data[1].url}`;
     })
         .catch((error) => console.log("error al cargar los datos", error));
 })(home || (home = {}));
