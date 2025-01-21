@@ -7,8 +7,10 @@
 
     /* ### Primary */
 
-    --Soft-red: hsl(7, 99%, 70%);
-    --Yellow: hsl(51, 100%, 49%);
+    --Soft-red: hsl(7, 100%, 79%);
+    --Yellow: hsl(51, 100%, 84%);
+    --Soft-red-hover: hsl(7, 99%, 70%);
+    --Yellow-hover: hsl(51, 100%, 49%);
     --Dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
     --Dark-blue-photography-text: hsl(198, 62%, 26%);
     --Dark-moderate-cyan-footer: hsl(168, 34%, 41%);
@@ -31,6 +33,8 @@
     font-size: 18px;
     font-family: var(--Barlow);
 }
+
+/* HEADER */
 
 header{
     width: 100vw;
@@ -83,6 +87,99 @@ a{
     font-family: var(--Fraunces);
     padding: 100px;
     padding-bottom: 50px;
+}
+/* END HEADER */
+
+/* MAIN */
+
+.section-one, .section-two, .section-three{
+    display: flex;
+    height: 600px;
+}
+
+.container-left, .container-right{
+    width: 100%;
+    padding: 120px;
+    
+}
+
+.socr-bg{
+    background-image: url(sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stcl-bg{
+    background-image: url(sunnyside-agency-landing-page-main/images/desktop/image-stand-out.jpg);
+    background-repeat: no-repeat;
+}
+
+.sthreecl-bg{
+    background-image: url(sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sthreecr-bg{
+    background-image: url(sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info-section-one, .info-section-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.title{
+    font-family: var(--Fraunces);
+    font-size: 35px;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.text{
+    line-height: 1.5;
+    color: var(--Very-dark-grayish-blue);
+}
+
+.button-learn{
+    width: fit-content;
+    text-transform: uppercase;
+    font-family: var(--Fraunces);
+    font-weight: 700;
+    padding: 0 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.button-yellow::before, .button-red::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 12px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.button-yellow::before{
+    background: var(--Yellow);
+}
+
+.button-yellow:hover::before{
+    background: var(--Yellow-hover);
+}
+
+.button-red::before{
+    background: var(--Soft-red);
+}
+
+.button-red:hover::before{
+    background: var(--Soft-red-hover);
 }
 
 .attribution { font-size: 11px; text-align: center; }
