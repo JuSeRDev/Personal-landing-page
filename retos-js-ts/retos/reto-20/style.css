@@ -126,6 +126,35 @@ a{
     background-repeat: no-repeat;
 }
 
+.sthreecl-bg, .sthreecr-bg{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 40px;
+    padding: 60px 120px;
+}
+
+.sthreecr-bg{
+    padding: 60px 180px;
+}
+
+.sthreecr-bg h1{
+    color: var(--Dark-blue-photography-text);
+}
+
+.sthreecr-bg p{
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.sthreecl-bg h1{
+    color: var(--Very-dark-grayish-blue);
+}
+
+.sthreecl-bg p{
+    color: var(--Dark-moderate-cyan-footer);
+}
+
 .info-section-one, .info-section-two{
     display: flex;
     flex-direction: column;
