@@ -362,6 +362,10 @@ footer{
         gap: 0;
     }
 
+    .menu-active{
+        display: flex;
+    }
+
     .menu::before{
         content: "";
         position: absolute;
