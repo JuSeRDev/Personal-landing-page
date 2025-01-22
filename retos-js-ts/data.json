@@ -1,5 +1,12 @@
 [
     {
+        "url": "./retos/reto-20/index.html",
+        "imgUrl":"./retos/reto-20/sunnyside-agency-landing-page-main/design/desktop-design.jpg",
+        "name": "Sunnyside agency landing page",
+        "description": "Landing page para una agencia de turismo espacial, con diseño responsivo y una experiencia interactiva para explorar destinos, tripulación y tecnología.",
+        "filter": "Junior"
+    },
+    {
         "url": "./retos/reto-19/index.html",
         "imgUrl":"./retos/reto-19/space-tourism-website-main/designs/crew.jpg",
         "name": "Tipspace tourism ebsite",
