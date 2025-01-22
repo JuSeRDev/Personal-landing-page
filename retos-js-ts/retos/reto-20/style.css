@@ -53,8 +53,17 @@ header{
     padding: 50px;
 }
 
+.hamburguer{
+    display: none;
+}
+
+li{
+    list-style: none;
+}
+
 .nav, .nav-footer{
     all: inherit;
+    cursor: pointer;
 }
 
 .menu{
@@ -322,3 +331,148 @@ footer{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); font-size: 11px; }
+
+@media (width <= 600px){
+    header{
+        height: 100vh;
+    }
+
+    .header{
+        position: relative;
+        align-items: center;
+    }
+
+    .hamburguer{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu{
+        display: none;
+        width: 75%;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+        right: 50%;
+        transform: translateX(50%);
+        top: 150px;
+        background: var(--White);
+        gap: 0;
+    }
+
+    .menu-active{
+        display: flex;
+    }
+
+    .menu::before{
+        content: "";
+        position: absolute;
+        top: -35px;
+        right: -19.5px;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 40px;
+        background: var(--White);
+        clip-path: polygon(100% 2%, 0% 100%, 100% 100%);
+    }
+
+    .nav-monile{
+        width: fit-content;
+        gap: 0;
+        text-align: center;
+        color: var(--Dark-moderate-cyan-footer);
+        font-weight: 500;
+    }
+
+    .nav:hover{
+        background: var(--Yellow-hover);
+        color: var(--Dark-blue-photography-text);
+        font-family: var(--Fraunces);
+        font-weight: 700;
+    }
+
+    .title-header{
+        font-size: 47px;
+        text-align: center;
+        padding: 80px 30px;
+    }
+
+    main{
+        height: 100%;
+    }
+
+    .section-one{
+        flex-direction: column-reverse;
+    }
+
+    .section-two, .section-three{
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .container-left, .container-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        height: 100%;
+    }
+    
+    .socr-bg, .stcl-bg{
+        padding: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sthreecl-bg, .sthreecr-bg{
+        justify-content: flex-end;
+        background-position: center;
+        background-size: 200%;
+        height: 600px;
+    }
+
+    .section-four{
+        padding: 60px 50px;
+    }
+
+    .title-client{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card-two{
+        padding: 60px 0;
+    }
+
+    .section-five{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .images{
+        height: auto;
+    }
+
+    footer{
+        padding: 60px 30px;
+    }
+
+    .menu-footer{
+        width: 100%;
+        justify-content: space-between;
+        padding: 40px 0;
+    }
+
+    .nav-footer{
+        padding: 0;
+        width: fit-content;
+    }
+
+}
