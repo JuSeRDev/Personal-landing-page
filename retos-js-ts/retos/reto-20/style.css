@@ -24,6 +24,7 @@
     --White: hsl(0, 0%, 100%);
 
     --nav-hover: #87CDF9;
+    --fill: #2C7566;
 }
 
 *{
@@ -52,7 +53,7 @@ header{
     padding: 50px;
 }
 
-a{
+.nav, .nav-footer{
     all: inherit;
 }
 
@@ -211,5 +212,113 @@ a{
     background: var(--Soft-red-hover);
 }
 
+/* SECTION FOUR */
+
+.section-four{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 170px;
+}
+
+.title-client{
+    text-transform: uppercase;
+    color: var(--Grayish-blue);
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.cards{
+    display: flex;
+    padding-top: 80px;
+    gap: 40px;
+}
+
+.card-one, .card-two, .card-three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.emily, .thomas, .jennie{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.emyly-text, .thomas-text, .jennie-text{
+    padding: 60px 0 70px 0;
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+    line-height: 1.5;
+}
+
+.name{
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+.profession{
+    font-size: 14px;
+    padding-top: 10px;
+    color: var(--Dark-moderate-cyan-footer);
+}
+
+.section-five{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100vw;
+    height: 100%;
+}
+
+.images {
+    width: 100%; 
+    height: 480px;
+    object-fit: cover;
+}
+
+/* END MAIN */
+
+/* FOOTER */
+
+footer{
+    background: var(--Grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+.logo{
+    fill: var(--Dark-desaturated-cyan-graphic-design-text);
+}
+
+.menu-footer{
+    display: flex;
+    padding: 40px;
+    font-weight: 500;
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+}
+
+.nav-footer:hover{
+    color: var(--White);
+}
+
+.social{
+    display: flex;
+    gap: 20px;
+}
+
+.facebook, .instagram, .twitter, .pinterest{
+    fill: var(--fill);
+    cursor: pointer;
+}
+
+.facebook:hover, .instagram:hover, .twitter:hover, .pinterest:hover{
+    fill: var(--White);
+}
+
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); font-size: 11px; }
