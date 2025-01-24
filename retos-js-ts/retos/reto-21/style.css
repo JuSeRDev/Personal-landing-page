@@ -1,3 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
 
-.attribution { font-size: 11px; text-align: center; }
+:root{
+    --font-family: "Commissioner";
+
+    /* ### Primary */
+    --Moderate-cyan: hsl(176, 50%, 47%);
+    --Dark-cyan: hsl(176, 72%, 28%);
+
+/*     ### Neutral */
+
+    --Black: hsl(0, 0%, 0%);
+    --Dark-gray: hsl(0, 0%, 48%);
+
+    --white: hsl(0, 0%, 100%);
+    --background: hsl(0, 0%, 98%);
+    --background-button-2: hsl(0, 0%, 91%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HEADER */
+
+header{
+    background-image: url(crowdfunding-product-page-main/images/image-hero-desktop.jpg);
+    padding: 50px 160px;
+    width: 100vw;
+    max-width: 1440px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+li, a{
+    all: inherit;
+}
+.menu{
+    display: flex;
+    gap: 25px;
+}
+
+.nav{
+    color: var(--white);
+    font-weight: 600;
+}
+
+.nav:hover{
+    text-decoration: underline;
+}
+
+/* END HEADER */
+
+/* MAIN */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background: var(--background);
+}
+
+.main-container{
+    width: 730px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: -90px;
+}
+
+.section-one, .section-two, .section-three{
+    background: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--Moderate-cyan);
+    padding: 50px;
+}
+
+.section-one{
+    padding-top: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-mastercraft{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: -30px;
+}
+
+.text-so{
+    padding: 20px 0 40px;
+    color: var(--Dark-cyan);
+}
+
+.buttons-so, .div-button2-so{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.button1-so{
+    padding: 20px 40px;
+    background: var(--Moderate-cyan);
+    border-radius: 40px;
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button1-so:hover{
+    background: var(--Dark-cyan);
+}
+
+.div-button2-so{
+    justify-content: flex-end;
+    position: relative;
+    width: fit-content;
+}
+
+.icon-bookmark{
+    position: absolute;
+    left: 0;
+}
+
+.button2-so{
+    padding: 20px 20px 20px 70px;
+    background-color: var(--background-button-2);
+    border-radius: 40px;
+    color: var(--Dark-gray);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* END MAIN */
+
+.attribution { font-size: 11px; text-align: center; display: flex; }
 .attribution a { color: hsl(228, 45%, 44%); }
