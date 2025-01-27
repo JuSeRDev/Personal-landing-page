@@ -14,8 +14,10 @@
 
     --white: hsl(0, 0%, 100%);
     --background: hsl(0, 100%, 98%);
-    --border: #ebeaea;
+    --border: hsl(0, 2%, 92%);
     --background-button-2: hsl(0, 0%, 91%);
+
+    --mahogany: hsl(0, 0%, 80%);
 }
 
 *{
@@ -222,6 +224,127 @@ main{
     background: var(--Moderate-cyan);
     border-radius: 20px;
 }
+
+/* END SECTION TOW */
+
+/* SECTION THREE */
+
+.article{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.title-article{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.text1-article, .text2-article{
+    color: var(--Dark-cyan);
+}
+
+.container-general-st{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* CONTAINER ONE AND TWO */
+
+.container-one, .container-two, .container-three{
+    border: 1px solid var(--background-button-2);
+    padding: 40px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h-left{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.h-right{
+    color: var(--Dark-gray);
+}
+
+.text-container{
+    line-height: 2;
+    color: var(--Dark-cyan);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fl-value{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.value{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.f-left{
+    color: var(--Dark-cyan);
+}
+
+.f-right{
+    padding: 15px 30px;
+    color: var(--white);
+    font-weight: 500;
+    background: var(--Moderate-cyan);
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.f-right:hover{
+    background: var(--Dark-cyan);
+}
+
+/* END CONTAINER ONE AND TWO */
+
+/* CONTAINER THREE */
+
+.hl-three{
+    color: var(--Dark-cyan);
+}
+
+.hr-three, .tc-three, .fl-three{
+    color: var(--mahogany);
+}
+
+.v-three{
+    color: var(--Dark-cyan);
+}
+
+.fr-three{
+    background: var(--mahogany);
+    cursor: auto;
+}
+
+.fr-three:hover{
+    background: var(--mahogany);
+}
+
+/* END CONTAINER THREE */
+
+/* END SECTION THREE */
 
 /* END MAIN */
 
