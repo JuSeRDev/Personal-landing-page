@@ -621,6 +621,7 @@ main{
     color: var(--white);
     border-radius: 30px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 

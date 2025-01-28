@@ -6,8 +6,14 @@ const internals = document.querySelectorAll(".internal") as NodeListOf<HTMLDivEl
 const footerSfs = document.querySelectorAll(".footer-sf") as NodeListOf<HTMLDivElement>
 const closeMenu = document.querySelector(".icon-close-menu") as SVGSVGElement
 const buttonProject = document.querySelector(".button1-so") as HTMLParagraphElement
-const input = document.querySelectorAll(".input") as NodeListOf<HTMLInputElement>
+const inputs = document.querySelectorAll(".input") as NodeListOf<HTMLInputElement>
+const buttonContinue = document.querySelectorAll(".continue-sf") as NodeListOf<HTMLParagraphElement>
+const sectionFive = document.querySelector(".section-five") as HTMLElement
+const buttonGo = document.querySelector(".go") as HTMLParagraphElement
+const valueSfs = document.querySelectorAll(".value-sf") as NodeListOf<HTMLSpanElement>
+const totalCash = document.querySelector(".cash-inicial") as HTMLParagraphElement
 
+const regex = /^[0-9]*$/
 const internalActive = "internal-active"
 const footerShow = "footer-sf-show"
 
@@ -53,11 +59,57 @@ externals.forEach((external, i) => {
     })
 });
 
-
 closeMenu.addEventListener("click", ()=>{
     removeArrays(internals, internalActive)
     removeArrays(footerSfs, footerShow)
     toggle("none")
 })
 
-const cash = document.querySelector(".cash-inicial") as HTMLSpanElement
+inputs.forEach(input => {
+    input.addEventListener("input", (e)=>{
+        const target = e.target as HTMLInputElement
+        if (!regex.test(target.value)) {
+            target.value = target.value.replace(/[^0-9]/g, "")
+        }
+    })
+});
+
+
+const capital = (param: string) =>{
+    let capitalStr = totalCash.textContent
+    if (capitalStr) {
+        let CapitalCorrection = capitalStr.replace(/[,\.]/g, "")
+        let capitalNumber = Number(CapitalCorrection)
+        let resultNumber = capitalNumber + Number(param)
+        let result = resultNumber.toLocaleString()
+        totalCash.innerHTML = result
+    }
+}
+
+buttonContinue.forEach(button => {
+    button.addEventListener("click", (e)=>{
+        if (inputs[0].value < "25" && inputs[1].value < "75" ) {
+            e.preventDefault()
+        } else {
+            sectionFive.style.display = "inline"
+            sectionFour.style.display = "none"
+            removeArrays(internals, internalActive)
+            removeArrays(footerSfs, footerShow)
+            inputs.forEach((input, i) => {
+                if (input.value > "") {
+                    capital(input.value)
+                    let value = Number(valueSfs[i].textContent)
+                    value = value -1
+                    let valueStr = value.toString()
+                    valueSfs[i].innerText = valueStr
+                }
+                input.value = ""
+            })
+        }
+    })
+});
+
+buttonGo.addEventListener("click", ()=>{
+    sectionFive.style.display = "none"
+    backgroundDark.style.display = "none"
+})
