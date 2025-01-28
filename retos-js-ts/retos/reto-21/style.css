@@ -504,11 +504,11 @@ main{
     align-items: center;
     height: 0;
     overflow: hidden;
-    transition: height 0.3s ease, padding 0.3s ease;
+    transition: height 0.5s ease, padding 0.5s ease;
 }
 
 .footer-sf-show{
-    height: auto;
+    height: 100px;
     padding: 25px;
 }
 
