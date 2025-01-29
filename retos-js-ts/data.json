@@ -1,9 +1,16 @@
 [
     {
+        "url": "./retos/reto-21/index.html",
+        "imgUrl":"./retos/reto-21/crowdfunding-product-page-main/design/desktop-preview.jpg",
+        "name": "Crowdfunding product page",
+        "description": "Landing page para una agencia de turismo espacial, con diseño responsivo y una experiencia interactiva para explorar destinos, tripulación y tecnología.",
+        "filter": "Junior"
+    },
+    {
         "url": "./retos/reto-20/index.html",
         "imgUrl":"./retos/reto-20/sunnyside-agency-landing-page-main/design/design.png",
         "name": "Sunnyside agency landing page",
-        "description": "Landing page para una agencia de turismo espacial, con diseño responsivo y una experiencia interactiva para explorar destinos, tripulación y tecnología.",
+        "description": "Landing page interactiva sobre un planificador de gastos, con diseño responsivo y una experiencia dinámica para administrar presupuestos y categorías.",
         "filter": "Junior"
     },
     {
