@@ -12,9 +12,19 @@ var sectionFive = document.querySelector(".section-five");
 var buttonGo = document.querySelector(".go");
 var valueSfs = document.querySelectorAll(".value-sf");
 var totalCash = document.querySelector(".cash-inicial");
+var person = document.querySelector(".persons");
+var lineInternal = document.querySelector(".line-internal");
 var regex = /^[0-9]*$/;
 var internalActive = "internal-active";
 var footerShow = "footer-sf-show";
+var total = 100000;
+var progressLine = function (param) {
+    var _a;
+    var num = Number((_a = param.textContent) === null || _a === void 0 ? void 0 : _a.replace(/[,\.]/g, ""));
+    var result = (num / total) * 100;
+    lineInternal.style.width = "".concat(result, "%");
+};
+progressLine(totalCash);
 var toggle = function (param) {
     sectionFour.style.display = "".concat(param);
     backgroundDark.style.display = "".concat(param);
@@ -56,6 +66,7 @@ closeMenu.addEventListener("click", function () {
     removeArrays(internals, internalActive);
     removeArrays(footerSfs, footerShow);
     toggle("none");
+    inputs.forEach(function (input) { return input.value = ""; });
 });
 inputs.forEach(function (input) {
     input.addEventListener("input", function (e) {
@@ -67,17 +78,23 @@ inputs.forEach(function (input) {
 });
 var capital = function (param) {
     var capitalStr = totalCash.textContent;
+    var totalPerosns = person.textContent;
     if (capitalStr) {
-        var CapitalCorrection = capitalStr.replace(/[,\.]/g, "");
-        var capitalNumber = Number(CapitalCorrection);
-        var resultNumber = capitalNumber + Number(param);
-        var result = resultNumber.toLocaleString();
+        var result = (Number(capitalStr.replace(/[,\.]/g, "")) + Number(param)).toLocaleString();
         totalCash.innerHTML = result;
+    }
+    if (totalPerosns) {
+        var persons = (Number(totalPerosns.replace(/[,\.]/g, "")) + 1).toLocaleString();
+        person.innerText = persons;
     }
 };
 buttonContinue.forEach(function (button) {
     button.addEventListener("click", function (e) {
-        if (inputs[0].value < "25" && inputs[1].value < "75") {
+        var _a;
+        var number1 = Number(inputs[0].value);
+        var number2 = Number(inputs[1].value);
+        var cash = Number((_a = totalCash.textContent) === null || _a === void 0 ? void 0 : _a.replace(/[,\.]/g, ""));
+        if ((number1 < 25 || cash + number1 > total) && (number2 < 75 || cash + number1 > total)) {
             e.preventDefault();
         }
         else {
@@ -96,6 +113,7 @@ buttonContinue.forEach(function (button) {
                 input.value = "";
             });
         }
+        progressLine(totalCash);
     });
 });
 buttonGo.addEventListener("click", function () {

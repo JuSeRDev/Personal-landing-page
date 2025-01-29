@@ -219,7 +219,6 @@ main{
 }
 
 .line-internal{
-    width: 80%;
     height: 100%;
     background: var(--Moderate-cyan);
     border-radius: 20px;

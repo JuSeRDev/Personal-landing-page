@@ -12,10 +12,21 @@ const sectionFive = document.querySelector(".section-five") as HTMLElement
 const buttonGo = document.querySelector(".go") as HTMLParagraphElement
 const valueSfs = document.querySelectorAll(".value-sf") as NodeListOf<HTMLSpanElement>
 const totalCash = document.querySelector(".cash-inicial") as HTMLParagraphElement
+const person = document.querySelector(".persons") as HTMLParagraphElement
+const lineInternal = document.querySelector(".line-internal") as HTMLDivElement
 
 const regex = /^[0-9]*$/
 const internalActive = "internal-active"
 const footerShow = "footer-sf-show"
+const total: number = 100000
+
+const progressLine = (param: HTMLParagraphElement) =>{
+    let num = Number(param.textContent?.replace(/[,\.]/g, ""))
+    let result: number = (num / total) * 100
+    lineInternal.style.width = `${result}%`
+}
+
+progressLine(totalCash)
 
 const toggle = (param: string) =>{
     sectionFour.style.display = `${param}`
@@ -63,6 +74,7 @@ closeMenu.addEventListener("click", ()=>{
     removeArrays(internals, internalActive)
     removeArrays(footerSfs, footerShow)
     toggle("none")
+    inputs.forEach(input => input.value = "" );
 })
 
 inputs.forEach(input => {
@@ -74,21 +86,27 @@ inputs.forEach(input => {
     })
 });
 
-
 const capital = (param: string) =>{
     let capitalStr = totalCash.textContent
+    let totalPerosns = person.textContent
     if (capitalStr) {
-        let CapitalCorrection = capitalStr.replace(/[,\.]/g, "")
-        let capitalNumber = Number(CapitalCorrection)
-        let resultNumber = capitalNumber + Number(param)
-        let result = resultNumber.toLocaleString()
+        let result = (Number(capitalStr.replace(/[,\.]/g, "")) + Number(param)).toLocaleString()
         totalCash.innerHTML = result
+    }
+    if (totalPerosns) {
+        let persons = (Number(totalPerosns.replace(/[,\.]/g, "")) +1).toLocaleString()
+        person.innerText = persons
     }
 }
 
+
 buttonContinue.forEach(button => {
     button.addEventListener("click", (e)=>{
-        if (inputs[0].value < "25" && inputs[1].value < "75" ) {
+        let number1: number = Number(inputs[0].value)
+        let number2: number = Number(inputs[1].value)
+        let cash = Number(totalCash.textContent?.replace(/[,\.]/g, ""))
+
+        if ((number1 < 25 || cash + number1 > total) && (number2 < 75 || cash + number1 > total) ) {
             e.preventDefault()
         } else {
             sectionFive.style.display = "inline"
@@ -106,6 +124,7 @@ buttonContinue.forEach(button => {
                 input.value = ""
             })
         }
+        progressLine(totalCash)
     })
 });
 
