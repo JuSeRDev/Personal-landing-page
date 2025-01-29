@@ -69,6 +69,10 @@ li, a{
     font-weight: 600;
 }
 
+.close-menu-nav{
+    display: none;
+}
+
 .nav:hover{
     text-decoration: underline;
 }
