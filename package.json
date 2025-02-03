@@ -1,0 +1,16 @@
+{
+  "name": "personal-landing-page",
+  "version": "1.0.0",
+  "description": "Este proyecto es una página web diseñada para mostrar los retos completados por el usuario de [Frontend Mentor](https://www.frontendmentor.io/). La landing page está organizada en diferentes secciones, destacando proyectos realizados con tecnologías como HTML, CSS, JavaScript y TypeScript.",
+  "main": "code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7"
+  }
+}
