@@ -1,5 +1,12 @@
 [
     {
+        "url": "./retos/reto-22/index.html",
+        "imgUrl":"./retos/reto-22/advice-generator-app-main/design/desktop-design.jpg",
+        "name": "Advice generator app",
+        "description": "Generador de consejos aleatorios con una interfaz dinámica, diseño adaptable y una experiencia interactiva para obtener nuevas frases motivacionales al instante",
+        "filter": "Junior"
+    },
+    {
         "url": "./retos/reto-21/index.html",
         "imgUrl":"./retos/reto-21/crowdfunding-product-page-main/design/desktop-preview.jpg",
         "name": "Crowdfunding product page",
