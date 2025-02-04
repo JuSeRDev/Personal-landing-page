@@ -1,11 +1,7 @@
-import axios from 'axios'
-import dotenv from "dotenv";
-
-dotenv.config()
-
-const urlApi01 = process.env.URL_API_01
-
-// console.log(urlApi01)
+const urlApi01 = "https://api.adviceslip.com/advice"
+const number = document.querySelector(".number") as HTMLParagraphElement
+const text = document.querySelector(".text") as HTMLParagraphElement
+const dice = document.querySelector(".container-dice") as HTMLDivElement
 
 interface Slip{
     id: number
@@ -16,14 +12,20 @@ interface apiResponse{
     slip: Slip
 }
 
-const getMessage = async() =>{
+const getMessage = async()=>{
+    const response = await fetch(urlApi01)
     try {
-        const response = await axios.get<apiResponse>(urlApi01!)
-        console.log(response.data.slip.advice)
+        const data: apiResponse = await response.json()
+        const id = data.slip.id.toString()
+        const advice = data.slip.advice
+        number.innerText = id
+        text.innerHTML = advice
+        
     } catch (error) {
-        console.error("Ojo, salio un error: ", error)
+        console.error(error)
     }
 }
 
 getMessage()
 
+dice.addEventListener("click", ()=> getMessage())
