@@ -1,5 +1,12 @@
 [
     {
+        "url": "./retos/reto-23/index.html",
+        "imgUrl":"./retos/reto-23/interactive-pricing-component-main/design/desktop-design.jpg",
+        "name": "Interactive pricing component",
+        "description": "Componente de precios interactivo con control deslizante, facturación mensual/anual y diseño adaptable para una experiencia fluida.",
+        "filter": "Junior"
+    },
+    {
         "url": "./retos/reto-22/index.html",
         "imgUrl":"./retos/reto-22/advice-generator-app-main/design/desktop-design.jpg",
         "name": "Advice generator app",
