@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* ### Primary */
+
+    --Light-red-CTA-text: hsl(356, 100%, 66%);
+    --Very-light-red-CTA-hover-background: hsl(355, 100%, 74%);
+    --Very-dark-blue-headings: hsl(208, 49%, 24%);
+
+    /* ### Neutral */
+
+    --White-text: hsl(0, 0%, 100%);
+    --Grayish-blue-footer-text: hsl(240, 2%, 79%);
+    --Very-dark-grayish-blue-body-copy: hsl(207, 13%, 34%);
+    --Very-dark-black-blue-footer-background: hsl(240, 10%, 16%);
+
+    /* ### Gradient */
+
+    /* Background gradient - Intro/CTA mobile nav: */
+
+    --Very-light-red: hsl(13, 100%, 72%);
+    --Light-red: hsl(353, 100%, 62%);
+
+    /* Background gradient - body: */
+
+    --Very-dark-gray-blue: hsl(237, 17%, 21%);
+    --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+    /* ###Fonds */
+
+    --font-ubuntu: 'Ubuntu', sans-serif;
+    --font-overpass: 'Overpass', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    padding: 60px 165px;
+    background-color: var(--Light-red);
+    background-image: url(blogr-landing-page-main/images/bg-pattern-intro-desktop.svg);
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: -500px;
+    color: var(--White-text);
+    font-family: var(--font-overpass);
+    border-radius: 0 0 0 100px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-ubuntu);
+}
+
+li{
+    all: unset;
+    cursor: pointer;
+}
+
+.arrow{
+    padding-left: 5px;
+}
+
+nav ul, .auth, .auth2, .info-header{
+    display: flex;
+    align-items: center;
+}
+
+nav ul .logo{
+    padding-right: 30px;
+}
+
+nav ul li{
+    padding: 0 15px;;
+}
+
+.li-header{
+    position: relative;
+}
+
+.ul-header{
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--White-text);
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: height .3s ease-in, overflow .3s ease-in;
+}
+
+.ul-header-active{
+    padding: 30px;
+    max-height: 200px;
+    overflow: visible;
+}
+
+a{
+    all: inherit;
+    color: black;
+}
+
+a:hover{
+    font-weight: 700;
+}
+
+
+.auth-p1, .auth-p2{
+    padding: 15px 35px;
+    cursor: pointer;
+}
+
+.auth-p2{
+    background: var(--White-text);
+    border-radius: 40px;
+    color: var(--Light-red);
+    font-weight: 700;
+}
+
+.auth-p2:hover{
+    color: var(--White-text);
+    background: var(--Very-light-red-CTA-hover-background);
+}
+
+.info-header{
+    flex-direction: column;
+    padding: 135px 0 95px;
+}
+
+.info-title{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.info-text{
+    padding: 20px 0 45px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.auth2{
+    gap: 12px;
+}
+
+.auth2-p1{
+    padding: 15px 20px;
+    border-radius: 40px;
+    background: var(--White-text);
+    color: var(--Light-red);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.auth2-p1:hover{
+    background: var(--Very-light-red-CTA-hover-background);
+    color: var(--White-text);
+}
+
+.auth2-p2{
+    padding: 15px 20px;
+    border: 1px solid var(--White-text);
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.auth2-p2:hover{
+    background: var(--White-text);
+    color: var(--Light-red);
+    font-weight: 700;
+}
+
+/* END HEADER */
+
+/* MAIN */
+
+main{
+    font-family: var(--font-ubuntu);
+}
+
+/* SECTION ONE */
+
+.section-one{
+    background-image: url(blogr-landing-page-main/images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 750px center;
+    padding: 160px 0 155px;
+}
+
+.so-title{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 110px;
+    color: var(--Very-dark-blue-headings);
+}
+
+.so-div, .st-div, .sth-div{
+    padding-left: 160px;
+    width: 680px;
+    line-height: 1.5;
+}
+
+.sod-title, .sthd-title{
+    color: var(--Very-dark-blue-headings);
+    font-size: 25px;
+}
+
+.sod-text, .sthd-text{
+    color: var(--Very-dark-grayish-blue-body-copy);
+    padding: 40px 0 80px;
+}
+
+
+
+/* END SECTION ONE */
+
+
+
+/* END MAIN */
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
