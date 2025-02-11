@@ -54,6 +54,14 @@ header{
     border-radius: 0 0 0 100px;
 }
 
+.hamburguer{
+    display: none;
+}
+
+.icon-close{
+    display: none;
+}
+
 .navigation{
     display: flex;
     justify-content: space-between;
@@ -224,6 +232,7 @@ main{
 .sod-title, .sthd-title, .std-title{
     color: var(--Very-dark-blue-headings);
     font-size: 25px;
+    font-family: var(--font-overpass);
 }
 
 .sod-text, .sthd-text{
@@ -317,9 +326,22 @@ footer{
 .attribution a { color: hsl(0, 0%, 100%); }
 
 @media (width <= 500px) {
+    
     header{
+        background-image: url(blogr-landing-page-main/images/bg-pattern-intro-mobile.svg);
+        background-position: top -100px right -800px;
+        background-size: 400%;
         padding: 50px 40px 150px;
         width: 100%;
+    }
+
+    .hamburguer{
+        display: inline;
+        cursor: pointer;
+    }
+
+    .icon-close{
+        display: none;
     }
 
     .navigation{
@@ -380,6 +402,87 @@ footer{
         top: 20px;
     }
 
+    .info-title{
+        text-align: center;
+        font-size: 32px;
+    }
 
+    .info-text{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    main{
+        padding: 100px 0 0;
+    }
+
+    .section-one{
+        padding-top: 0;
+        background-image: url(blogr-landing-page-main/images/illustration-editor-mobile.svg);
+        background-position: 0px 100px;
+        background-size: 100%;
+    }
+
+    .so-div{
+        padding: 300px 25px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-two{
+        background-position: center -200px;
+        background-size: 150%;
+    }
+
+    .phones{
+        width: 100%;
+        top: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .st-div{
+        padding: 230px 25px 110px;
+        text-align: center;
+    }
+
+    .std-title{
+        font-size: 30px;
+    }
+
+    .section-three{
+        padding: 0;
+        background-image: url(blogr-landing-page-main/images/illustration-laptop-mobile.svg);
+        background-position: center top;
+        background-size: 130%;
+    }
+
+    .sth-div{
+        padding: 400px 25px 50px;
+        text-align: center;
+    }
+
+    .sthd-text{
+        padding-bottom: 50px;
+    }
+
+    footer{
+        border-radius: 0 100px 0 0;
+        text-align: center;
+        width: 100%;
+        padding: 70px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    footer .logo{
+        padding-bottom: 80px;
+    }
+
+    .company{
+        padding: 50px 0;
+    }
 }
 
