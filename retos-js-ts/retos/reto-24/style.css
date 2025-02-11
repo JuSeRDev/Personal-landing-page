@@ -75,7 +75,13 @@ li{
 }
 
 .arrow{
-    padding-left: 10px;
+    
+    transform: rotate(0);
+    transition: transform 0.3s ease;
+}
+
+.arrow-active{
+    transform: rotate(-180deg);
 }
 
 nav{
@@ -100,6 +106,10 @@ nav ul li{
 
 .li-header{
     position: relative;
+}
+
+picture{
+    padding-left: 10px;
 }
 
 .li-header:hover{
@@ -308,6 +318,7 @@ footer{
     all: unset;
     font-family: var(--font-ubuntu);
     color: var(--Grayish-blue-footer-text);
+    cursor: pointer;
 }
 
 .f-text a:hover{
@@ -342,6 +353,7 @@ footer{
 
     .icon-close{
         display: none;
+        cursor: pointer;
     }
 
     .navigation{
@@ -480,6 +492,7 @@ footer{
     footer .logo{
         padding-bottom: 80px;
     }
+
 
     .company{
         padding: 50px 0;

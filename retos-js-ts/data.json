@@ -1,5 +1,12 @@
 [
     {
+        "url": "./retos/reto-24/index.html",
+        "imgUrl":"./retos/reto-24/blogr-landing-page-main/design/desktop-preview.jpg",
+        "name": "Blogr landing page",
+        "description": "Landing page moderna con navegación desplegable, diseño responsivo y secciones informativas. Incluye menú interactivo, ilustraciones atractivas y llamado a la acción.",
+        "filter": "Junior"
+    },
+    {
         "url": "./retos/reto-23/index.html",
         "imgUrl":"./retos/reto-23/interactive-pricing-component-main/design/desktop-design.jpg",
         "name": "Interactive pricing component",
