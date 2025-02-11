@@ -27,6 +27,8 @@
     --Very-light-red: hsl(13, 100%, 72%);
     --Light-red: hsl(353, 100%, 62%);
 
+    --gradient: linear-gradient(90deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
+
     /* Background gradient - body: */
 
     --Very-dark-gray-blue: hsl(237, 17%, 21%);
@@ -66,6 +68,13 @@ li{
 
 .arrow{
     padding-left: 10px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
 }
 
 nav ul, .auth, .auth2, .info-header{
@@ -306,3 +315,71 @@ footer{
     color: var(--Grayish-blue-footer-text);
 }
 .attribution a { color: hsl(0, 0%, 100%); }
+
+@media (width <= 500px) {
+    header{
+        padding: 50px 40px 150px;
+        width: 100%;
+    }
+
+    .navigation{
+        position: relative;
+    }
+
+    nav{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        top: 100px;
+        background-color: var(--White-text);
+        color: var(--Very-dark-black-blue-footer-background);
+        padding: 30px 25px;
+        border-radius: 10px;
+    }
+
+    .ul-principal{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding-bottom: 20px;
+    }
+
+    .li-header{
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .auth{
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0 0;
+        border-top: 1px solid var(--Grayish-blue-footer-text);
+        gap: 5px;
+    }
+
+    .auth-p1, .auth-p2{
+        padding: 12px 35px;
+    }
+
+    .auth-p2{
+        background: var(--gradient);
+        color: var(--White-text);
+    }
+
+
+    .ul-header-active{
+        width: 65vw;
+        position: relative;
+        background: var(--Grayish-blue-footer-text);
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        top: 20px;
+    }
+
+
+}
+
