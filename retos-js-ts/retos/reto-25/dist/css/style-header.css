@@ -8,7 +8,7 @@ header{
     background-image: url(../../loopstudios-landing-page-main/images/desktop/image-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 70vh;
 }
 
 .nav{
@@ -25,6 +25,9 @@ header{
 
 .nav-item{
     position: relative;
+}
+
+.nav-link{
     cursor: pointer;
 }
 
@@ -87,21 +90,28 @@ header{
 
     .nav{
         position: relative;
+        align-items: flex-start;
     }
 
     .nav-list{
         position: absolute;
         flex-direction: column;
         top: 50px;
+        left: 0;
         text-transform: uppercase;
-        height: 0;
-        overflow: hidden;
+        height: 200px;
+        /* overflow: hidden; */
         transition: height 0.5s ease, overflow 0.5s ease;
     }
 
-    .nav-list-active{
+    /* .nav-list-active{
         height: 100%;
         overflow: visible;
+        gap: 20px;
+    } */
+
+    .nav-item{
+        display: flex;
     }
 
     .nav-link{

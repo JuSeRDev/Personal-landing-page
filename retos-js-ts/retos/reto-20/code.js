@@ -1,5 +1,6 @@
-var hamburguer = document.querySelector(".hamburguer");
-var menu = document.querySelector(".menu");
-hamburguer.addEventListener("click", function () {
+"use strict";
+const hamburguer = document.querySelector(".hamburguer");
+const menu = document.querySelector(".menu");
+hamburguer.addEventListener("click", () => {
     menu.classList.toggle("menu-active");
 });
