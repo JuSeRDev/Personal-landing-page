@@ -25,10 +25,6 @@ a{
     font-family: var(--font-alata);
 }
 
-.nav-item{
-    all: inherit;
-}
-
 .text{
     font-family: var(--font-alata);
 }

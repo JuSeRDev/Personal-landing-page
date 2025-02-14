@@ -24,6 +24,7 @@ header{
 }
 
 .nav-item{
+    all: inherit;
     position: relative;
 }
 
@@ -71,8 +72,8 @@ header{
         background: transparent;
         background-image: url(../../loopstudios-landing-page-main/images/mobile/image-hero.jpg);
         background-size: cover;
-        height: 75vh;
-        transition: backgrground-color 0.3s ease;
+        height: 700px;
+        transition: backgrground 0.3s ease;
     }
 
     .header-active{
@@ -83,41 +84,44 @@ header{
     .logo{
         width: 150px;
     }
-    
+
     .menu-toggle{
         display: inline;
     }
 
     .nav{
         position: relative;
-        align-items: flex-start;
     }
-
+    
     .nav-list{
-        position: absolute;
+        width: 100%;
         flex-direction: column;
-        top: 50px;
-        left: 0;
+        position: absolute;
+        top: 0;
         text-transform: uppercase;
-        height: 200px;
-        /* overflow: hidden; */
-        transition: height 0.5s ease, overflow 0.5s ease;
+        height: 0;
+        visibility: hidden;
+        transition: height 0.3s ease, visibility 0.3s ease, top 0.3s ease-in;
     }
 
-    /* .nav-list-active{
-        height: 100%;
-        overflow: visible;
-        gap: 20px;
-    } */
-
-    .nav-item{
-        display: flex;
+    .nav-list-active{
+        top: 50px;
+        height: 50px;
+        visibility: visible;
     }
 
-    .nav-link{
-        font-family: var(--font-Josefin);
+    .nav-item .nav-link{
         font-weight: 300;
-        font-size: 25px;
+        font-family: var(--font-Josefin);
+    }
+    
+    .nav-link:hover::before{
+        display: none;
+    }
+    
+    .nav-item{
+        font-size: 30px;
+        /* font-family: var(--font-aleta); */
     }
 
     .header-content{

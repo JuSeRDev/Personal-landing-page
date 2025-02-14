@@ -1,5 +1,12 @@
 [
     {
+        "url": "./retos/reto-25/index.html",
+        "imgUrl":"./retos/reto-25/loopstudios-landing-page-main/design/desktop-preview.jpg",
+        "name": "Loopstudios landing page",
+        "description": "Landing page moderna con un diseño inmersivo que destaca experiencias de realidad virtual. Incluye navegación intuitiva, galería de proyectos y un diseño adaptable para diversos dispositivos.",
+        "filter": "Junior"
+    },
+    {
         "url": "./retos/reto-24/index.html",
         "imgUrl":"./retos/reto-24/blogr-landing-page-main/design/desktop-preview.jpg",
         "name": "Blogr landing page",
