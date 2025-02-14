@@ -1,40 +1,41 @@
+"use strict";
 var challenge21;
 (function (challenge21) {
-    var selects = document.querySelectorAll(".f-right");
-    var sectionFour = document.querySelector(".section-four");
-    var backgroundDark = document.querySelector(".background-dark");
-    var externals = document.querySelectorAll(".external");
-    var internals = document.querySelectorAll(".internal");
-    var footerSfs = document.querySelectorAll(".footer-sf");
-    var closeMenu = document.querySelector(".icon-close-menu");
-    var buttonProject = document.querySelector(".button1-so");
-    var inputs = document.querySelectorAll(".input");
-    var buttonContinue = document.querySelectorAll(".continue-sf");
-    var sectionFive = document.querySelector(".section-five");
-    var buttonGo = document.querySelector(".go");
-    var valueSfs = document.querySelectorAll(".value-sf");
-    var totalCash = document.querySelector(".cash-inicial");
-    var person = document.querySelector(".persons");
-    var lineInternal = document.querySelector(".line-internal");
-    var hamburguer = document.querySelector(".hamburguer");
-    var hamburguerClose = document.querySelector(".close-menu-nav");
-    var menu = document.querySelector(".menu");
-    var regex = /^[0-9]*$/;
-    var internalActive = "internal-active";
-    var footerShow = "footer-sf-show";
-    var total = 100000;
-    var progressLine = function (param) {
+    const selects = document.querySelectorAll(".f-right");
+    const sectionFour = document.querySelector(".section-four");
+    const backgroundDark = document.querySelector(".background-dark");
+    const externals = document.querySelectorAll(".external");
+    const internals = document.querySelectorAll(".internal");
+    const footerSfs = document.querySelectorAll(".footer-sf");
+    const closeMenu = document.querySelector(".icon-close-menu");
+    const buttonProject = document.querySelector(".button1-so");
+    const inputs = document.querySelectorAll(".input");
+    const buttonContinue = document.querySelectorAll(".continue-sf");
+    const sectionFive = document.querySelector(".section-five");
+    const buttonGo = document.querySelector(".go");
+    const valueSfs = document.querySelectorAll(".value-sf");
+    const totalCash = document.querySelector(".cash-inicial");
+    const person = document.querySelector(".persons");
+    const lineInternal = document.querySelector(".line-internal");
+    const hamburguer = document.querySelector(".hamburguer");
+    const hamburguerClose = document.querySelector(".close-menu-nav");
+    const menu = document.querySelector(".menu");
+    const regex = /^[0-9]*$/;
+    const internalActive = "internal-active";
+    const footerShow = "footer-sf-show";
+    const total = 100000;
+    const progressLine = (param) => {
         var _a;
-        var num = Number((_a = param.textContent) === null || _a === void 0 ? void 0 : _a.replace(/[,\.]/g, ""));
-        var result = (num / total) * 100;
-        lineInternal.style.width = "".concat(result, "%");
+        let num = Number((_a = param.textContent) === null || _a === void 0 ? void 0 : _a.replace(/[,\.]/g, ""));
+        let result = (num / total) * 100;
+        lineInternal.style.width = `${result}%`;
     };
     progressLine(totalCash);
-    var toggle = function (param) {
-        sectionFour.style.display = "".concat(param);
-        backgroundDark.style.display = "".concat(param);
+    const toggle = (param) => {
+        sectionFour.style.display = `${param}`;
+        backgroundDark.style.display = `${param}`;
     };
-    var toggleSelect = function (i) {
+    const toggleSelect = (i) => {
         internals[i].classList.toggle(internalActive);
         if (i === 1) {
             footerSfs[0].classList.toggle("footer-sf-show");
@@ -43,12 +44,12 @@ var challenge21;
             footerSfs[1].classList.toggle("footer-sf-show");
         }
     };
-    var removeArrays = function (param, classes) {
-        param.forEach(function (element) { return element.classList.remove(classes); });
+    const removeArrays = (param, classes) => {
+        param.forEach(element => element.classList.remove(classes));
     };
-    buttonProject.addEventListener("click", function () { return toggle("inline"); });
-    selects.forEach(function (select, i) {
-        select.addEventListener("click", function () {
+    buttonProject.addEventListener("click", () => toggle("inline"));
+    selects.forEach((select, i) => {
+        select.addEventListener("click", () => {
             toggle("inline");
             if (i === 0) {
                 internals[1].classList.toggle(internalActive);
@@ -60,45 +61,45 @@ var challenge21;
             }
         });
     });
-    externals.forEach(function (external, i) {
-        external.addEventListener("click", function () {
+    externals.forEach((external, i) => {
+        external.addEventListener("click", () => {
             removeArrays(internals, internalActive);
             removeArrays(footerSfs, footerShow);
             toggleSelect(i);
         });
     });
-    closeMenu.addEventListener("click", function () {
+    closeMenu.addEventListener("click", () => {
         removeArrays(internals, internalActive);
         removeArrays(footerSfs, footerShow);
         toggle("none");
-        inputs.forEach(function (input) { return input.value = ""; });
+        inputs.forEach(input => input.value = "");
     });
-    inputs.forEach(function (input) {
-        input.addEventListener("input", function (e) {
-            var target = e.target;
+    inputs.forEach(input => {
+        input.addEventListener("input", (e) => {
+            const target = e.target;
             if (!regex.test(target.value)) {
                 target.value = target.value.replace(/[^0-9]/g, "");
             }
         });
     });
-    var capital = function (param) {
-        var capitalStr = totalCash.textContent;
-        var totalPerosns = person.textContent;
+    const capital = (param) => {
+        let capitalStr = totalCash.textContent;
+        let totalPerosns = person.textContent;
         if (capitalStr) {
-            var result = (Number(capitalStr.replace(/[,\.]/g, "")) + Number(param)).toLocaleString();
+            let result = (Number(capitalStr.replace(/[,\.]/g, "")) + Number(param)).toLocaleString();
             totalCash.innerHTML = result;
         }
         if (totalPerosns) {
-            var persons = (Number(totalPerosns.replace(/[,\.]/g, "")) + 1).toLocaleString();
+            let persons = (Number(totalPerosns.replace(/[,\.]/g, "")) + 1).toLocaleString();
             person.innerText = persons;
         }
     };
-    buttonContinue.forEach(function (button) {
-        button.addEventListener("click", function (e) {
+    buttonContinue.forEach(button => {
+        button.addEventListener("click", (e) => {
             var _a;
-            var number1 = Number(inputs[0].value);
-            var number2 = Number(inputs[1].value);
-            var cash = Number((_a = totalCash.textContent) === null || _a === void 0 ? void 0 : _a.replace(/[,\.]/g, ""));
+            let number1 = Number(inputs[0].value);
+            let number2 = Number(inputs[1].value);
+            let cash = Number((_a = totalCash.textContent) === null || _a === void 0 ? void 0 : _a.replace(/[,\.]/g, ""));
             if ((number1 < 25 || cash + number1 > total) && (number2 < 75 || cash + number1 > total)) {
                 e.preventDefault();
             }
@@ -107,12 +108,12 @@ var challenge21;
                 sectionFour.style.display = "none";
                 removeArrays(internals, internalActive);
                 removeArrays(footerSfs, footerShow);
-                inputs.forEach(function (input, i) {
+                inputs.forEach((input, i) => {
                     if (input.value > "") {
                         capital(input.value);
-                        var value = Number(valueSfs[i].textContent);
+                        let value = Number(valueSfs[i].textContent);
                         value = value - 1;
-                        var valueStr = value.toString();
+                        let valueStr = value.toString();
                         valueSfs[i].innerText = valueStr;
                     }
                     input.value = "";
@@ -121,13 +122,13 @@ var challenge21;
             progressLine(totalCash);
         });
     });
-    buttonGo.addEventListener("click", function () {
+    buttonGo.addEventListener("click", () => {
         sectionFive.style.display = "none";
         backgroundDark.style.display = "none";
     });
-    var menuNav = function (action, hidden, display) {
-        action.addEventListener("click", function () {
-            var color = "linear-gradient(180deg, rgba(0,0,0,0.6054796918767507) 0%, rgba(255,255,255,0) 100%)";
+    const menuNav = (action, hidden, display) => {
+        action.addEventListener("click", () => {
+            let color = "linear-gradient(180deg, rgba(0,0,0,0.6054796918767507) 0%, rgba(255,255,255,0) 100%)";
             action.style.display = "none";
             hidden.style.display = "inline";
             menu.style.display = display;

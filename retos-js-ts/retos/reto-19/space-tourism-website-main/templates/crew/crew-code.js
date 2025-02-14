@@ -1,13 +1,4 @@
 "use strict";
-import { changeBgImg, displayMenu } from "../modules/index.js";
-
-changeBgImg('crew', false)
-
-const closeMenu = document.querySelector('.list-mobile')
-const items = document.querySelector('.items')
-const menuImg = document.querySelector('.list-mobile-img')
-let isClose = true
-
 var spaceTourismDate;
 (function (spaceTourismDate) {
     const buttons = document.querySelectorAll(".button");
@@ -35,8 +26,3 @@ var spaceTourismDate;
         });
     });
 })(spaceTourismDate || (spaceTourismDate = {}));
-
-menuImg.addEventListener('click', () => {
-  isClose = !isClose
-  displayMenu(closeMenu, items, menuImg, isClose, false)
-})

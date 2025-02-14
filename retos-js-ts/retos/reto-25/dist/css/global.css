@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+
+    --font-alata: "Alata", serif; /* PARRAFOS */
+    --font-Josefin: "Josefin Sans", serif; /* TITULOS */
+}
+
+.title{
+    font-family: var(--font-Josefin);
+}
+
+a{
+    all: inherit;
+    font-family: var(--font-alata);
+}
+
+.text{
+    font-family: var(--font-alata);
+}
+
+button{
+    all: inherit;
+    padding: 0;
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    align-items: center;
+    font-size: 11px;
+    background: var(--Black);
+    color: var(--White);
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
