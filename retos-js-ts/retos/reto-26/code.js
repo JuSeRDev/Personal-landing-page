@@ -29,7 +29,7 @@ var challenge26;
     const back = document.querySelector(".button-back");
     const next = document.querySelector(".button-next");
     back.addEventListener("click", () => {
-        if (currentIndex < 0) {
+        if (currentIndex > 0) {
             currentIndex--;
             updateUI();
         }

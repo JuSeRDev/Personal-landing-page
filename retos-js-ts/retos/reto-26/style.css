@@ -16,6 +16,7 @@
 }
 
 body{
+    width: 100%;
     height: 110vh;
     display: grid;
     place-items: center;
@@ -96,3 +97,58 @@ body{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (width <= 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-size: 90%, 100%;
+        background-position: center 20px, bottom;
+    }
+
+    .card{
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px 0;
+        background-size: 20%;
+        background-position: center 53%;
+    }
+
+    .article{
+        padding: 60px 20px 20px;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text{
+        font-size: 18px;
+    }
+
+    .container-img{
+        width: 100%;
+        position: relative;
+        padding: 30px;
+    }
+
+    .img{
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+
+    .buttons{
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .info{
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+}

@@ -1,9 +1,9 @@
 
 namespace challenge26 {
-    const description = document.querySelector<HTMLParagraphElement>(".text") 
-    const name = document.querySelector<HTMLParagraphElement>(".name")
-    const experience = document.querySelector<HTMLParagraphElement>(".experience")
-    const image = document.querySelector<HTMLImageElement>(".img")
+    const description = document.querySelector(".text") as HTMLParagraphElement
+    const name = document.querySelector(".name") as HTMLParagraphElement
+    const experience = document.querySelector(".experience") as HTMLParagraphElement
+    const image = document.querySelector(".img") as HTMLImageElement
     
     const persons = [
         {
@@ -22,10 +22,10 @@ namespace challenge26 {
     let currentIndex = 0
 
     const updateUI = () =>{
-        description!.innerText = persons[currentIndex].description
-        name!.innerText = persons[currentIndex].name
-        experience!.innerText = persons[currentIndex].experience
-        image!.src = persons[currentIndex].img
+        description.innerText = persons[currentIndex].description
+        name.innerText = persons[currentIndex].name
+        experience.innerText = persons[currentIndex].experience
+        image.src = persons[currentIndex].img
     }
 
     updateUI()
@@ -34,7 +34,7 @@ namespace challenge26 {
     const next = document.querySelector(".button-next") as HTMLButtonElement
 
     back.addEventListener("click", ()=>{
-        if (currentIndex < 0) {
+        if (currentIndex > 0) {
             currentIndex--
             updateUI()
         }
@@ -46,7 +46,4 @@ namespace challenge26 {
             updateUI()
         }
     })
-    
-    
-    
 }
