@@ -1,5 +1,12 @@
 [
     {
+        "url": "./retos/reto-26/index.html",
+        "imgUrl":"./retos/reto-26/coding-bootcamp-testimonials-slider-master/design/desktop-preview.jpg",
+        "name": "Coding bootcamp testimonials slider",
+        "description": "Un slider de testimonios interactivo donde los usuarios pueden navegar entre opiniones con botones prev/next. Implementado con TypeScript para actualizar dinámicamente el contenido y la imagen.",
+        "filter": "Junior"
+    },
+    {
         "url": "./retos/reto-25/index.html",
         "imgUrl":"./retos/reto-25/loopstudios-landing-page-main/design/desktop-preview.jpg",
         "name": "Loopstudios landing page",
