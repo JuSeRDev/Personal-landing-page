@@ -5,14 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -20,7 +14,7 @@
     <div class="header">
       <div class="headerinfo">
         <p class="social-media numbers">Social Media Dashboard</p>
-        <p class="titles">Total Followers: 23,004</p>
+        <p class="social-media-title titles">Total Followers: 23,004</p>
       </div>
       <div class="dark-mode">
         <p class="titles">Dark Mode</p>
@@ -32,175 +26,170 @@
   </section>
 
   <section class="followers">
+
     <div class="card">
       <div class="container-users">
-        <img src="" alt="" class="sm">
-          <p class="titles">@nathanf</p>
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg" alt="" class="sm">
+          <p class="titles user">@nathanf</p>
         </img></div>
       <p class="numbers numbers-followers">1987</p>
       <p class="titles titles-followers">Followers</p>
       <div class="container-days">
-        <img src="" alt="" class="arrow">
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" class="arrow">
         <p class="days">12 Today</p>
       </div>
     </div>
 
     <div class="card">
       <div class="container-users">
-        <img src="" alt="" class="sm">
-          <p class="titles">@nathanf</p>
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt="" class="sm">
+          <p class="titles user">@nathanf</p>
         </img></div>
       <p class="numbers numbers-followers">1044</p>
       <p class="titles titles-followers">Followers</p>
       <div class="container-days">
-        <img src="" alt="" class="arrow">
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" class="arrow">
         <p class="days">99 Today</p>
       </div>
     </div>
 
     <div class="card">
       <div class="container-users">
-        <img src="" alt="" class="sm">
-          <p class="titles">@realnathanf</p>
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt="" class="sm">
+          <p class="titles user">@realnathanf</p>
         </img></div>
       <p class="numbers numbers-followers">11k</p>
       <p class="titles titles-followers">Followers</p>
       <div class="container-days">
-        <img src="" alt="" class="arrow">
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" class="arrow">
         <p class="days">1099 Today</p>
       </div>
     </div>
     
     <div class="card">
       <div class="container-users">
-        <img src="" alt="" class="sm">
-          <p class="titles">Nathan F.</p>
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg" alt="" class="sm">
+          <p class="titles user">Nathan F.</p>
         </img></div>
       <p class="numbers numbers-followers">8239</p>
       <p class="titles titles-followers">Subscribers</p>
       <div class="container-days">
-        <img src="" alt="" class="arrow">
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="" class="arrow">
         <p class="days">144 Today</p>
       </div>
     </div>
+
   </section>
 
 
 
-  <p class="today numbers">Overview - Today</p>
-
-  <div class="card-today">
-    <div class="colum-one">
-      <p class="titles">Page Views</p>
-      <p class="numbers">87</p>
-    </div>
-    <div class="colum-two">
-      <img src="" alt="" class="img">
-      <div class="div-percentage">
-        <img src="" alt="" class="arrow-percentage">
-        <p class="percentage">3%</p>
+  <section class="overview">
+    <p class="today numbers">Overview - Today</p>
+    <div class="card-today">
+      <div class="colum-one">
+        <p class="titles">Page Views</p>
+        <p class="numbers">87</p>
+      </div>
+      <div class="colum-two">
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg" alt="" class="img">
+        <div class="div-percentage">
+          <img src="social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="" class="arrow-percentage">
+          <p class="percentage">3%</p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="card-today">
-    <div class="colum-one">
-      <p class="titles">Likes</p>
-      <p class="numbers">52</p>
-    </div>
-    <div class="colum-two">
-      <img src="" alt="" class="img">
-      <div class="div-percentage">
-        <img src="" alt="" class="arrow-percentage">
-        <p class="percentage">2%</p>
+    <div class="card-today">
+      <div class="colum-one">
+        <p class="titles">Likes</p>
+        <p class="numbers">52</p>
+      </div>
+      <div class="colum-two">
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg" alt="" class="img">
+        <div class="div-percentage">
+          <img src="social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" class="arrow-percentage">
+          <p class="percentage">2%</p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="card-today">
-    <div class="colum-one">
-      <p class="titles">Likes</p>
-      <p class="numbers">5462</p>
-    </div>
-    <div class="colum-two">
-      <img src="" alt="" class="img">
-      <div class="div-percentage">
-        <img src="" alt="" class="arrow-percentage">
-        <p class="percentage">2257%</p>
+    <div class="card-today">
+      <div class="colum-one">
+        <p class="titles">Likes</p>
+        <p class="numbers">5462</p>
+      </div>
+      <div class="colum-two">
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt="" class="img">
+        <div class="div-percentage">
+          <img src="social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" class="arrow-percentage">
+          <p class="percentage">2257%</p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="card-today">
-    <div class="colum-one">
-      <p class="titles">Profile Views</p>
-      <p class="numbers">52k</p>
-    </div>
-    <div class="colum-two">
-      <img src="" alt="" class="img">
-      <div class="div-percentage">
-        <img src="" alt="" class="arrow-percentage">
-        <p class="percentage">1375%</p>
+    <div class="card-today">
+      <div class="colum-one">
+        <p class="titles">Profile Views</p>
+        <p class="numbers">52k</p>
+      </div>
+      <div class="colum-two">
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt="" class="img">
+        <div class="div-percentage">
+          <img src="social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" class="arrow-percentage">
+          <p class="percentage">1375%</p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="card-today">
-    <div class="colum-one">
-      <p class="titles">Retweets</p>
-      <p class="numbers">117</p>
-    </div>
-    <div class="colum-two">
-      <img src="" alt="" class="img">
-      <div class="div-percentage">
-        <img src="" alt="" class="arrow-percentage">
-        <p class="percentage">303%</p>
+    <div class="card-today">
+      <div class="colum-one">
+        <p class="titles">Retweets</p>
+        <p class="numbers">117</p>
+      </div>
+      <div class="colum-two">
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt="" class="img">
+        <div class="div-percentage">
+          <img src="social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" class="arrow-percentage">
+          <p class="percentage">303%</p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="card-today">
-    <div class="colum-one">
-      <p class="titles">Likes</p>
-      <p class="numbers">507</p>
-    </div>
-    <div class="colum-two">
-      <img src="" alt="" class="img">
-      <div class="div-percentage">
-        <img src="" alt="" class="arrow-percentage">
-        <p class="percentage">553%</p>
+    <div class="card-today">
+      <div class="colum-one">
+        <p class="titles">Likes</p>
+        <p class="numbers">507</p>
+      </div>
+      <div class="colum-two">
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt="" class="img">
+        <div class="div-percentage">
+          <img src="social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" class="arrow-percentage">
+          <p class="percentage">553%</p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="card-today">
-    <div class="colum-one">
-      <p class="titles">Likes</p>
-      <p class="numbers">107</p>
-    </div>
-    <div class="colum-two">
-      <img src="" alt="" class="img">
-      <div class="div-percentage">
-        <img src="" alt="" class="arrow-percentage">
-        <p class="percentage">19%</p>
-
+    <div class="card-today">
+      <div class="colum-one">
+        <p class="titles">Likes</p>
+        <p class="numbers">107</p>
+      </div>
+      <div class="colum-two">
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg" alt="" class="img">
+        <div class="div-percentage">
+          <img src="social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="" class="arrow-percentage">
+          <p class="percentage">19%</p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="card-today">
-    <div class="colum-one">
-      <p class="titles">Total Views</p>
-      <p class="numbers">1407</p>
-    </div>
-    <div class="colum-two">
-      <img src="" alt="" class="img">
-      <div class="div-percentage">
-        <img src="" alt="" class="arrow-percentage">
-        <p class="percentage">12%</p>
+    <div class="card-today">
+      <div class="colum-one">
+        <p class="titles">Total Views</p>
+        <p class="numbers">1407</p>
+      </div>
+      <div class="colum-two">
+        <img src="social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg" alt="" class="img">
+        <div class="div-percentage">
+          <img src="social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="" class="arrow-percentage">
+          <p class="percentage">12%</p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
