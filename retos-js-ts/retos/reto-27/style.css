@@ -55,7 +55,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background: linear-gradient(to bottom, var(--Very-Pale-Blue-Top-BG-Pattern) 40%, var(--White-BG) 40%);
     transition: background 0.3s ease;
 }
@@ -108,7 +107,7 @@ body{
     position: relative;
     text-align: center;
     width: 270px;
-    transition: background 0.3s ease-in;
+    transition: background 0.3s ease;
     cursor: pointer;
 }
 
@@ -260,6 +259,10 @@ body{
 
 .black-and-white{
     color: var(--Very-Dark-Blue-Text);
+}
+
+.back-and-white-active{
+    color: var(--White-Text);
 }
 
 .titles{
