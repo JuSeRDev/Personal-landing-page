@@ -1,9 +1,16 @@
 [
     {
+        "url": "./retos/reto-27/index.html",
+        "imgUrl":"./retos/reto-27/social-media-dashboard-with-theme-switcher-master/design/desktop-preview.jpg",
+        "name": "Social media dashboard with themeswitcher masterr",
+        "description": "Dashboard de redes sociales con modo oscuro, alternando dinámicamente entre temas claro y oscuro para una mejor experiencia visual.",
+        "filter": "Junior"
+    },
+    {
         "url": "./retos/reto-26/index.html",
         "imgUrl":"./retos/reto-26/coding-bootcamp-testimonials-slider-master/design/desktop-preview.jpg",
         "name": "Coding bootcamp testimonials slider",
-        "description": "Un slider de testimonios interactivo donde los usuarios pueden navegar entre opiniones con botones prev/next. Implementado con TypeScript para actualizar dinámicamente el contenido y la imagen.",
+        "description": "Slider de testimonios interactivo con botones prev/next, actualizado dinámicamente con TypeScript.",
         "filter": "Junior"
     },
     {
