@@ -22,7 +22,7 @@
 
     /* #### Dark Theme */
 
-    --Toggle: linear-gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+    --Toggle-gradient: linear-gradient(90deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 100%);
 
     /* #### Light Theme */
 
@@ -37,9 +37,10 @@
     --Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
     --Desaturated-Blue-Text: hsl(228, 34%, 66%);
     --White-Text: hsl(0, 0%, 100%);
-
+    
     /* #### Light Theme */
-
+    
+    --card-hover: hsl(231, 30%, 91%);
     --White-BG: hsl(0, 0%, 100%);
     --Very-Pale-Blue-Top-BG-Pattern: hsl(225, 100%, 98%);
     --Light-Grayish-Blue-Card-BG: hsl(227, 47%, 96%);
@@ -50,13 +51,17 @@
 
 body{
     font-family: var(--font-family);
-    display: grid;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    place-items: center;
-    background: 
-        linear-gradient(to bottom, var(--Very-Pale-Blue-Top-BG-Pattern)30%, var(--White-BG) 30%);
-    
+    background: linear-gradient(to bottom, var(--Very-Pale-Blue-Top-BG-Pattern) 40%, var(--White-BG) 40%);
+    transition: background 0.3s ease;
+}
+
+.body-dm{
+    background: linear-gradient(to bottom, var(--Very-Dark-Blue-Top-BG-Pattern)40%, var(--Very-Dark-Blue-BG)40%);
 }
 
 .dashboard, .followers, .overview {
@@ -64,9 +69,19 @@ body{
     padding: 35px 160px;
 }
 
+.followers{
+    padding-bottom: 0;
+}
+
 .header{
     display: flex;
     justify-content: space-between;
+}
+
+.headerinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .social-media{
@@ -78,7 +93,7 @@ body{
     font-weight: 700;
 }
 
-.followers{
+.followers, .container-cards-today{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -86,14 +101,19 @@ body{
     row-gap: 20px;
 }
 
-.card{
-    padding: 20px;
+.card, .card-today{
+    padding: 20px 30px;
     background: var(--Light-Grayish-Blue-Card-BG);
-    border-radius: 0 0 10px 10px;
+    border-radius: 5px 5px 10px 10px;
     position: relative;
     text-align: center;
     width: 270px;
-    height: 210px;
+    transition: background 0.3s ease-in;
+    cursor: pointer;
+}
+
+.card:hover, .card-today:hover{
+    background: var(--card-hover);
 }
 
 .card::before{
@@ -111,6 +131,10 @@ body{
 .card:nth-child(3)::before{background: var(--Instagram)}
 .card:nth-child(4)::before{background: var(--YouTube)}
 
+.card-dm{
+    background: var(--Dark-Desaturated-Blue-Card-BG);
+}
+
 .container-users{
     display: flex;
     gap: 5px;
@@ -125,7 +149,7 @@ body{
 .titles-followers{
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .container-users{
@@ -135,6 +159,16 @@ body{
 
 .user, .days{
     font-size: 14px;
+}
+
+.container-days{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.days{
+    font-weight: 700;
 }
 
 /* BOTTON */
@@ -155,6 +189,12 @@ body{
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.botton-bg-dm{
+    background: var(--Toggle-gradient);
 }
 
 .botton{
@@ -162,18 +202,73 @@ body{
     height: 20px;
     background: var(--White-BG);
     border-radius: 50%;
-    cursor: pointer;
     transition: transform 0.3s ease-in-out;
     position: absolute;
-    left: 3px;
+    right: 3px;
 }
 
 .botton-active{
-    justify-content: flex-end;
-    transform: translateX(24px);
+    /* justify-content: flex-end; */
+    transform: translateX(-24px);
 }
 
 /* END BOTTON */
+
+.today{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.card-today{
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.colum-one, .colum-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    gap: 20px;
+}
+
+.container-img{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.number-today{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.div-percentage{
+    display: flex;
+    gap: 10px;
+}
+
+.percentage{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* COLORS */
+
+.black-and-white{
+    color: var(--Very-Dark-Blue-Text);
+}
+
+.titles{
+    color: var(--Dark-Grayish-Blue-Text);
+}
+
+.red{
+    color: var(--Bright-Red);
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
