@@ -275,3 +275,31 @@ body{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (width <= 600px){
+    .dashboard, .followers, .overview{
+        padding: 30px;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .headerinfo{
+        padding-bottom: 20px;
+    }
+
+    .dark-mode{
+        justify-content: space-between;
+        border-top: 1px solid var(--Dark-Grayish-Blue-Text);
+        padding-top: 20px;
+    }
+
+    .card, .card-today{
+        width: 100%;
+    }
+
+}
