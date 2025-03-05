@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root{
+    --Dark-Violet: hsl(256, 26%, 20%);
+    --Grayish-Blue: hsl(216, 30%, 68%);
+
+    --Very-Dark-Violet: hsl(270, 9%, 17%);
+    --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+    --font-family: "DM Serif Display", serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+a{
+    all: inherit;
+    text-transform: uppercase;
+}
+
+.button{
+    padding: 12px 22px;
+    outline: 1px solid var(--Dark-Violet);
+    width: fit-content;
+}
+
+.banner-button, .header-button{
+    color: var(--Very-Light-Gray);
+    outline-color: var(--Very-Light-Gray);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
