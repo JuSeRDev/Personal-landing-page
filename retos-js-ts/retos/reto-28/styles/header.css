@@ -1,0 +1,95 @@
+@import url(global.css);
+
+.bar-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 167px 20px;
+    z-index: 1;
+    background: var(--Very-Light-Gray);
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+li{
+    all: inherit;
+    color: var(--Dark-Grayish-Violet);
+}
+
+a:hover{
+    color: var(--Very-Dark-Violet);
+}
+
+.nav-button{
+    margin-left: 10px;
+    color: var(--Very-Dark-Violet);
+}
+
+.nav-button:hover {
+    background: var(--Very-Dark-Violet);
+    color: var(--Very-Light-Gray);
+}
+
+.container-header{
+    display: flex;
+    padding: 100px 167px 125px;
+    position: relative;
+    width: 100%;
+    background-color: var(--Dark-Violet);
+    background-repeat: no-repeat;
+    background-position: left bottom, right top;
+}
+
+.background-img{
+    width: 100%;
+    background-color: transparent;
+    background-image: url(../insure-landing-page-master/images/bg-pattern-intro-left-desktop.svg), url(../insure-landing-page-master/images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom, right top -100px;
+    height: 900px;
+    position: absolute;
+    top: 93px;
+}
+
+.info-header{
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-top: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.info-header::before{
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: var(--Very-Light-Gray);
+    position: absolute;
+    top: 0;
+}
+
+.photo{
+    position: absolute;
+    right: 167px;
+}
+
+.title-header{
+    color: var(--Very-Light-Gray);
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 65px;
+}
+
+.text-header{
+    color: var(--Very-Light-Gray);
+}
+
+.header-button{
+    cursor: pointer;
+}
+

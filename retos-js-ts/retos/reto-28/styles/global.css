@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root{
     --Dark-Violet: hsl(256, 26%, 20%);
@@ -8,19 +8,24 @@
     --Dark-Grayish-Violet: hsl(273, 4%, 51%);
     --Very-Light-Gray: hsl(0, 0%, 98%);
 
-    --font-family: "DM Serif Display", serif;
+    --font-family-DM: "DM Serif Display", serif;
+    --font-family-karla: "Karla", sans-serif;
+
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--font-family);
+    font-family: var(--font-family-DM);
 }
 
 a{
     all: inherit;
     text-transform: uppercase;
+    font-weight: 600;
+    font-family: var(--font-family-karla);
+    
 }
 
 .button{
