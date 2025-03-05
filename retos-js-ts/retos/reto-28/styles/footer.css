@@ -56,3 +56,23 @@ footer{
 .footer-text:hover{
     text-decoration: underline;
 }
+
+@media (width <= 600px) {
+    footer{
+        padding: 80px 25px;
+    }
+    
+    .bar{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .container-footer-info{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+    }
+}

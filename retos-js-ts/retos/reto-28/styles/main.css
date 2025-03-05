@@ -69,3 +69,36 @@ main{
 .banner-button:hover{
     background: var(--Very-Light-Gray);
 }
+
+
+@media (width <= 600px) {
+    main{
+        padding: 140px 25px 140px;
+        text-align: center;
+    }
+
+    .main-title{
+        font-size: 50px;
+    }
+
+    .main-title::before{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cards-container{
+        justify-content: center;
+    }
+
+    .banner{
+        flex-direction: column;
+        padding: 75px 40px;
+        gap: 40px;
+        background-image: url(../insure-landing-page-master/images/bg-pattern-how-we-work-mobile.svg);
+    }
+
+    .banner-title{
+        font-size: 45px;
+        width: 100%;
+    }
+}
