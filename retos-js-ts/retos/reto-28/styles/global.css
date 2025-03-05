@@ -37,6 +37,7 @@ a{
 .banner-button, .header-button{
     color: var(--Very-Light-Gray);
     outline-color: var(--Very-Light-Gray);
+    cursor: pointer;
 }
 
 .attribution { font-size: 11px; text-align: center; }
