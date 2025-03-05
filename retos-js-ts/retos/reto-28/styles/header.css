@@ -128,11 +128,12 @@ a:hover{
         top: 90px;
         height: 0;
         overflow: hidden;
+        transition: padding 0.3s ease, height 0.3s ease;
     }
 
     .ul-active{
-        padding: 47px 20px;
-        height: 800px;
+        padding: 60px 20px;
+        height: 85vh;
     }
 
     .info-header-active{
@@ -192,7 +193,7 @@ a:hover{
 
     .background-img{
         height: 700px;
-        top: 730px;
+        top: 742px;
         background-image: url(../insure-landing-page-master/images/bg-pattern-intro-left-mobile.svg), url(../insure-landing-page-master/images/bg-pattern-intro-right-mobile.svg);
         background-position: top left, bottom right;
     }
