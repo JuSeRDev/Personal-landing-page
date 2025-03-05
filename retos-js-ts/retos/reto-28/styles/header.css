@@ -8,6 +8,15 @@
     z-index: 1;
     background: var(--Very-Light-Gray);
 }
+
+nav{
+    display: flex;
+}
+
+.hamburguer, .close-menu{
+    display: none;
+}
+
 ul{
     display: flex;
     align-items: center;
@@ -26,6 +35,7 @@ a:hover{
 .nav-button{
     margin-left: 10px;
     color: var(--Very-Dark-Violet);
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .nav-button:hover {
@@ -91,5 +101,10 @@ a:hover{
 
 .header-button{
     cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.header-button:hover{
+    background-color: var(--Very-Light-Gray);
 }
 

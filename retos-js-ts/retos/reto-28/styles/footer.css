@@ -24,7 +24,11 @@ footer{
     cursor: pointer;
 }
 
-.social-media path:hover{
+.social-media path{
+    transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.social-media:hover path{
     fill: var(--Dark-Violet);
 }
 
