@@ -40,5 +40,13 @@ a{
     cursor: pointer;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+    text-transform: capitalize;
+}
