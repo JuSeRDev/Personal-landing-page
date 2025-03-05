@@ -71,7 +71,7 @@ a:hover{
     gap: 26px;
     padding-top: 60px;
     position: relative;
-    z-index: 2;
+    z-index: 2; /* cambiar a 0 */
 }
 
 .info-header::before{
@@ -106,5 +106,99 @@ a:hover{
 
 .header-button:hover{
     background-color: var(--Very-Light-Gray);
+}
+
+@media (width <= 600px) {
+    .bar-header{
+        padding: 25px 30px;
+        position: relative;
+    }
+
+    .ul{
+        padding: 0 20px;
+        background: var(--Very-Dark-Violet);
+        background-image: url(../insure-landing-page-master/images/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        position: absolute;
+        width: 100%;
+        right: 50%;
+        transform: translateX(50%);
+        top: 90px;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .ul-active{
+        padding: 47px 20px;
+        height: 800px;
+    }
+
+    .info-header-active{
+        z-index: 0;
+    }
+
+    ul{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    ul a {
+        color: var(--Very-Light-Gray);
+    }
+
+    .hamburguer{
+        display: inline;
+        cursor: pointer;
+    }
+
+    li{
+        padding: 5px;
+    }
+    
+    li .nav-button{
+        margin: 0;
+        width: 100%;
+        outline-color: var(--Very-Light-Gray);
+        color: var(--Very-Light-Gray);
+    }
+
+    li .nav-button:hover{
+        background: var(--Very-Light-Gray);
+        color: var(--Dark-Violet);
+    }
+
+    .container-header{
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+
+    .photo{
+        position: initial;
+    }
+
+    .info-header{
+        padding: 100px 25px 90px;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .info-header::before{
+        display: none;
+    }
+
+    .background-img{
+        height: 700px;
+        top: 730px;
+        background-image: url(../insure-landing-page-master/images/bg-pattern-intro-left-mobile.svg), url(../insure-landing-page-master/images/bg-pattern-intro-right-mobile.svg);
+        background-position: top left, bottom right;
+    }
+
+    .text-header{
+        line-height: 2;
+    }
 }
 
