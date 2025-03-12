@@ -1,2 +1,19 @@
-const priceAnnually: string[] = ["&dollar;199.99", "&dollar;249.99", "&dollar;399.99"]
-const priceMonthly: string[] = ["&dollar;19.99", "&dollar;24.99", "&dollar;39.99"]
+
+namespace challenge29 {
+  const button = document.querySelector(".circle") as HTMLParagraphElement
+  const prices = document.querySelectorAll(".price") as NodeListOf<HTMLParagraphElement>
+
+  const circleActive: string = "circle-active"
+  const priceAnnually: string[] = ["$199.99", "$249.99", "$399.99"]
+  const priceMonthly: string[] = ["$19.99", "$24.99", "$39.99"]
+  const isActive = button.classList.contains(circleActive)
+  
+  const priceEdit = () => {
+    prices.forEach((price, i) => price.textContent = isActive ? priceMonthly[i] : priceAnnually[i]);
+  }
+
+  button.addEventListener("click", ()=> {
+    button.classList.toggle(circleActive)
+    priceEdit()
+  })
+}
