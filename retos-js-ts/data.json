@@ -1,8 +1,8 @@
 [
     {
-        "url": "./retos/reto-28/index.html",
-        "imgUrl":"./retos/reto-28/insure-landing-page-master/design/desktop-preview.jpg",
-        "name": "insure landing page master",
+        "url": "./retos/reto-29/index.html",
+        "imgUrl":"./retos/reto-29/pricing-component-with-toggle-master/design/active-states.jpg",
+        "name": "pricing-component-with-toggle-master",
         "description": "Landing page moderna y minimalista para una aseguradora. Destaca planes accesibles, proceso ágil y enfoque en las personas. Incluye navegación responsive y diseño adaptable.",
         "filter": "Junior"
     },

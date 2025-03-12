@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --font-family: "Montserrat", sans-serif;
+
+  /* ### Primary */
+
+  --Linear-Gradient: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);;
+
+  /* ### Neutral */
+
+  --Ver-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+body{
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background-image: url(pricing-component-with-toggle-master/images/bg-top.svg), url(pricing-component-with-toggle-master/images/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+  background-color: var(--Ver-Light-Grayish-Blue);
+}
+
+.title{
+  color: var(--Dark-Grayish-Blue);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.annually-monthly{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--Grayish-Blue);
+}
+
+.bg-button{
+  width: 40px;
+  padding: 2px 2px;
+  background: var(--Linear-Gradient);
+  border-radius: 30px;
+}
+
+.circle{
+  width: 20px;
+  height: 20px;
+  background-color: var(--Ver-Light-Grayish-Blue);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  transition: left 0.3s ease;
+}
+
+.circle-active{
+  left: 20px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
