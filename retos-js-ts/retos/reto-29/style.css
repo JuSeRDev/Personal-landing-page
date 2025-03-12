@@ -13,6 +13,9 @@
   --Light-Grayish-Blue: hsl(234, 14%, 74%);
   --Grayish-Blue: hsl(233, 13%, 49%);
   --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+
+  --bgCard: hsl(0, 0%, 100%);
+  --text-color: hsl(237, 63%, 64%);
 }
 
 *{
@@ -22,13 +25,23 @@
 }
 
 body{
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  place-items: center;
+  gap: 50px;
   background-image: url(pricing-component-with-toggle-master/images/bg-top.svg), url(pricing-component-with-toggle-master/images/bg-bottom.svg);
   background-repeat: no-repeat;
   background-position: top right, bottom left;
   background-color: var(--Ver-Light-Grayish-Blue);
+}
+
+.contianer-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
 .title{
@@ -65,6 +78,85 @@ body{
 .circle-active{
   left: 20px;
 }
+
+/* container card */
+
+.contianer-card{
+  display: flex;
+  align-items: center;
+}
+
+.card{
+  padding: 30px;
+  border-radius: 10px;
+  background: var(--bgCard);
+  text-align: center;
+}
+
+.card-title{
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 700;
+}
+
+.price{
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 700;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.text{
+  border-top: 1px solid var(--Light-Grayish-Blue);
+  padding: 20px 0;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.text-end{
+  border-bottom: 1px solid var(--Light-Grayish-Blue);
+}
+
+.button{
+  padding: 10px;
+  text-align: center;
+  background: var(--Linear-Gradient);
+  border-radius: 10px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: var(--bgCard);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover{
+  background: transparent;
+  outline: 1px solid var(--Grayish-Blue);
+  color: var(--text-color);
+}
+
+.card-2{
+  padding: 50px 30px;
+  background: var(--Linear-Gradient);
+}
+
+.ct2, .tx2, .txe2, .p2{
+ color: var(--bgCard);
+}
+
+.b2{
+  background: var(--bgCard);
+  color: var(--text-color);
+}
+
+.b2:hover{
+  background: transparent;
+  color: var(--bgCard);
+  outline: 1px solid var(--bgCard);
+}
+
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
