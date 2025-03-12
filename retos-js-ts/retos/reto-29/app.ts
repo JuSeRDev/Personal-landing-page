@@ -6,10 +6,10 @@ namespace challenge29 {
   const circleActive: string = "circle-active"
   const priceAnnually: string[] = ["$199.99", "$249.99", "$399.99"]
   const priceMonthly: string[] = ["$19.99", "$24.99", "$39.99"]
-  const isActive = button.classList.contains(circleActive)
   
   const priceEdit = () => {
-    prices.forEach((price, i) => price.textContent = isActive ? priceMonthly[i] : priceAnnually[i]);
+    const isActive = button.classList.contains(circleActive)
+    prices.forEach((price, i) => price.innerText = isActive ? priceMonthly[i] : priceAnnually[i] );
   }
 
   button.addEventListener("click", ()=> {

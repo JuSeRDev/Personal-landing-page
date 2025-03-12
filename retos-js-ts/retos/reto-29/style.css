@@ -157,7 +157,17 @@ body{
   outline: 1px solid var(--bgCard);
 }
 
-
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (width <= 600px) {
+body{
+  height: 100%;
+}
+
+  .contianer-card{
+    flex-direction: column;
+    gap: 40px;
+  }
+}

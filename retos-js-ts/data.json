@@ -1,9 +1,9 @@
 [
     {
         "url": "./retos/reto-29/index.html",
-        "imgUrl":"./retos/reto-29/pricing-component-with-toggle-master/design/active-states.jpg",
-        "name": "pricing-component-with-toggle-master",
-        "description": "Landing page moderna y minimalista para una aseguradora. Destaca planes accesibles, proceso ágil y enfoque en las personas. Incluye navegación responsive y diseño adaptable.",
+        "imgUrl":"./retos/reto-29/pricing-component-with-toggle-master/design/desktop-preview.jpg",
+        "name": "Pricing component with toggle master",
+        "description": "Este reto consiste en diseñar una interfaz de precios con un interruptor que alterna entre tarifas anuales y mensuales, mostrando los valores correspondientes de manera dinámic",
         "filter": "Junior"
     },
     {
