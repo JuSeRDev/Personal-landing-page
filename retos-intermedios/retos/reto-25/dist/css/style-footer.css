@@ -1,0 +1,110 @@
+@import url(global.css);
+
+footer{
+    background: var(--Black);
+    padding: 40px 160px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+}
+
+.icons{
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon{
+    cursor: pointer;
+    position: relative;
+}
+
+.icon:before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.icon:hover::before{
+    background: var(--White);
+}
+
+.nav-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list-footer{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item-f{
+    all: inherit;
+    cursor: pointer;
+    font-family: var(--font-Josefin);
+}
+
+.nav-link-f{
+    all: inherit;
+    color: var(--White);
+    position: relative;
+}
+
+
+.nav-link-f::before{
+    content: "";
+    width: 25px;
+    height: 2px;
+    background: transparent;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.nav-link-f:hover::before{
+    background: var(--White);
+}
+
+.copy-right{
+    color: var(--Dark-Gray);
+    justify-self: flex-end;
+}
+
+@media (width <= 600px){
+    footer{
+        width: 100%;
+        padding: 100px 30px 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo, .copy-right, .icons{
+        justify-self: center;
+    }
+
+    .nav-footer{
+        justify-content: center;
+        padding: 40px 0 60px;
+    }
+
+    .nav-list-footer{
+        flex-direction: column;
+        grid-row: 2/3;
+    }
+
+    .icons{
+        grid-row: 3/4;
+        padding-bottom: 10px;
+    }
+
+}

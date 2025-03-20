@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font: "Roboto", serif;
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Tomato: hsl(4, 100%, 67%);
+    --Tomato-background: hsla(4, 100%, 67%, 0.093);
+    --Tomato-shadow: hsla(4, 100%, 67%, 0.523);
+
+    /* ### Neutral */
+
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: var(--font);
+    background: var(--Charcoal-Grey);
+    position: relative;
+}
+
+.general-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--White);
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.container-text{
+    max-width: 500px;
+    padding: 60px 60px 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: 50px;
+    color: var(--Dark-Slate-Grey);
+}
+
+.text{
+    margin: 20px 0;
+}
+
+.list{
+    list-style-type:none;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.email-label{
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--Dark-Slate-Grey);
+}
+
+.email-div{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.error-email-text{
+    font-size: 10px;
+    color: var(--Tomato);
+    font-weight: 700;
+    display: none;
+}
+
+.input-email{
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--Grey);
+    font-size: 16px;
+    color: var(--Dark-Slate-Grey);
+}
+
+.input-email:focus{
+    outline: none;
+    border-color: var(--Dark-Slate-Grey);
+}
+
+.input-email::placeholder{
+    font-size: 16px;
+}
+
+.error-placeholder{
+    color: red;
+}
+
+.error-input{
+    background: var(--Tomato-background);
+    border-color: var(--Tomato);
+}
+
+.button, .button-2{
+    padding: 22px;
+    border: none;
+    background: var(--Dark-Slate-Grey);
+    color: var(--White);
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:active, .button-2:active{
+    background: linear-gradient(90deg, rgba(237,96,123,1) 17%, rgba(237,113,75,1) 100%);
+    box-shadow: 5px 15px 30px var(--Tomato-shadow);
+}
+
+.img-mobile{
+    display: none;
+}
+
+/* CONFIRMACION */
+
+.confirm-container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    place-content: center;
+    background: var(--Charcoal-Grey);
+}
+
+.container-confirmation{
+    width: 500px;
+    height: 500px;
+    padding: 50px 60px 60px;
+    background: var(--White);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    color: var(--Charcoal-Grey);
+}
+
+.title-2{
+    font-size: 50px;
+    color: var(--Dark-Slate-Grey);
+}
+
+.button-2{
+    width: 100%;
+}
+
+.confirm-mail{
+    font-weight: bold;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 50px; color: white;}
+.attribution a { color: hsl(229, 20%, 69%); }
+
+
+@media (width < 700px){
+    .general-container{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .img-mobile{
+        display: block;
+        width: 100%;
+        position: relative;
+        top: -5px;
+    }
+
+    .container-text{
+        padding: 20px;
+        height: auto;
+    }
+
+    .list{
+        padding-right: 30px;
+        gap: 20px;
+        height: auto;
+    }
+
+    .img-desktop{
+        display: none;
+    }
+    .confirm-container, body{
+        background: var(--White);
+    }
+
+    .container-confirmation{
+        position: relative;
+    }
+
+    .button-2{
+        position: relative;
+        bottom: -200px;
+    }
+    .attribution { font-size: 11px; text-align: center; margin-top: 50px; color: rgb(21, 48, 255);}
+    .attribution a { color: hsl(229, 71%, 23%); }
+}

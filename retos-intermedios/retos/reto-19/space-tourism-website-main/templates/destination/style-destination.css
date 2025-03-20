@@ -1,0 +1,113 @@
+main{
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 100px;
+}
+
+.planet{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.text-pick{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.number-planet{
+    color: var(--number-planet);
+}
+
+.information{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.planets{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.button{
+    all: inherit;
+    cursor: pointer;
+    padding-bottom: 16px;
+    color: var(--text);
+}
+
+.button-active{
+    border-bottom: 2px solid var(--white);
+}
+
+.planet-name{
+    width: 500px;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.planet-info{
+    color: var(--text);
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--text);
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+.info-extra{
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.distance, .travel-time{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.km, .time{
+    font-size: 20px;
+}
+
+.avg-distance, .travel{
+    color: var(--text);
+    font-size: 10px;
+}
+
+@media (width <= 600px){
+
+    main{
+        padding-top: 1.5rem;
+    }
+
+    .container{
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .information{
+        width: 100%;
+    }
+
+    .planet-name{
+        width: fit-content;;
+    }
+
+    .planet-img{
+        width:300px;
+    }
+}

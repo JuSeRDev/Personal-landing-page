@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --font: "Work Sans", system-ui;
+    /* Weights: 400, 600, 700 */
+
+    /* ## Colors */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+    --grayish-purple-shadow: hsla(293, 16%, 49%, 0.129);
+    --hover: #ad28eb;
+}
+
+/* BODY */
+
+body{
+    font-family: var(--font);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(faq-accordion-main/assets/images/background-pattern-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: var(--Light-pink);
+}
+
+/* END BODY */
+
+/* CONTAINER */
+
+.container{
+    width: 620px;
+    padding: 30px;
+    background: var(--White);
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px var(--grayish-purple-shadow);
+}
+
+/* END CONTAINER */
+
+/* LOGO */
+
+.logo{
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.title{
+    font-size: 50px;
+}
+
+/* END LOGO */
+
+.section-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitle:hover{
+    color: var(--hover);
+}
+
+.subtitle{
+    color: var(--Dark-purple);
+    cursor: pointer;
+}
+
+.number1{
+    border-bottom: 1px solid var(--Light-pink);
+    padding-bottom: 20px;
+}
+
+.number2, .number3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--Light-pink);
+}
+
+.number4{
+    padding-top: 20px;
+}
+
+.plus{
+    display: flex;
+    cursor: pointer;
+}
+
+.minus{
+    display: none;
+    cursor: pointer;
+}
+
+
+.paragraph{
+    font-size: 16px;
+    color: var(--Grayish-purple);
+    font-weight: 300;
+   /*  margin-top: 30px;
+    margin-bottom: 20px;
+    display: none; */
+    max-height: 0;
+    overflow: hidden; /* Oculta lo que sale de los limites permitidos en el height */
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.paragraph.open{
+    max-height: 150px;
+}
+
+
+footer{
+    margin-top: 20px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 600px){
+    body{
+        background-image: url(faq-accordion-main/assets/images/background-pattern-mobile.svg);
+        background-size: 600px;
+    }
+
+    .container{
+        width: 350px;
+    }
+}
