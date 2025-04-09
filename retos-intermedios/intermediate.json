@@ -1,8 +1,8 @@
 [
   {
     "url": "./retos/reto-1/index.html",
-    "imgUrl":"./retos/reto-1/interactive-comments-section-main/design/desktop-preview.jpg",
-    "name": "Interactive comments section",
+    "imgUrl":"./retos/reto-1/calculator-app-main/design/desktop-design-theme-1.jpg",
+    "name": "Calculator app ",
     "description": "Texto de 200 caracterers",
     "filter": "Intermediate"
   }
