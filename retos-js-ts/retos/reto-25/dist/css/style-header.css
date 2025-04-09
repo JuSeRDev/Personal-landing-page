@@ -1,0 +1,135 @@
+@import url(global.css);
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 160px 140px;
+    background-image: url(../../loopstudios-landing-page-main/images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    gap: 30px;
+    color: var(--White);
+}
+
+.nav-item{
+    all: inherit;
+    position: relative;
+}
+
+.nav-link{
+    cursor: pointer;
+}
+
+.nav-link::before{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: transparent;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover::before{
+    background: var(--White);
+}
+
+.menu-toggle, .menu-close{
+    display: none;
+    cursor: pointer;
+}
+
+.header-content{
+    max-width: 650px;
+    border: 2px solid var(--White);
+    padding: 35px 45px;
+}
+
+.header-title{
+    color: var(--White);
+    font-weight: 300;
+    font-size: 60px;
+}
+
+@media (width <= 600px){
+    header{
+        width: 100%;
+        padding: 70px 30px 200px;
+        background: transparent;
+        background-image: url(../../loopstudios-landing-page-main/images/mobile/image-hero.jpg);
+        background-size: cover;
+        height: 700px;
+        transition: backgrground 0.3s ease;
+    }
+
+    .header-active{
+        background: black;
+        height: 100vh;
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    .menu-toggle{
+        display: inline;
+    }
+
+    .nav{
+        position: relative;
+    }
+    
+    .nav-list{
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        text-transform: uppercase;
+        height: 0;
+        visibility: hidden;
+        transition: height 0.3s ease, visibility 0.3s ease, top 0.3s ease-in;
+    }
+
+    .nav-list-active{
+        top: 50px;
+        height: 50px;
+        visibility: visible;
+    }
+
+    .nav-item .nav-link{
+        font-weight: 300;
+        font-family: var(--font-Josefin);
+    }
+    
+    .nav-link:hover::before{
+        display: none;
+    }
+    
+    .nav-item{
+        font-size: 30px;
+        /* font-family: var(--font-aleta); */
+    }
+
+    .header-content{
+        padding: 40px;
+    }
+
+    .header-title{
+        font-size: 35px;
+    }
+
+}

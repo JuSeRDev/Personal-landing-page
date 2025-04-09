@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+    --font: "Source Code Pro", monospace;
+    --black: #000000;
+    --white: white;
+    --shadow: rgba(92, 92, 92, 0.119);
+    --dark: #021526;
+    --light: #ffffff;
+    --border: #0000005c;
+    /* color-scheme: light dark; */
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: light-dark(var(--light), var(--dark));
+    color: light-dark(var(--dark), var(--light));
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: var(--font);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    gap: 20px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.bio-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    text-align: left;
+}
+
+.bio{
+    max-width: 700px;
+    padding-top: 20px;
+}
+
+.photo {
+    width: 150px; 
+    height: 150px;
+    padding: 5px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 1px dashed var(--border);
+    /* mask-image: linear-gradient(white 80%, transparent); */
+}
+
+.photo-mobile{
+    display: none;
+}
+
+.lenguajes{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.landing-description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.last-challenge{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20PX;
+    margin: 0;
+}
+
+.container-lc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.challenge-lc1, .challenge-lc2{
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    flex-wrap: wrap;
+    border-radius: 21px;
+    border: 1px dashed var(--border);
+}
+
+.container-img-lc{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+.challenge-lc1:hover, .challenge-lc2:hover{
+    border: 1px solid var(--black);
+}
+
+.url1, .url2{
+    all: inherit;
+    cursor: pointer;
+}
+
+.challenge-img{
+    width: fit-content 16/9;
+    max-width: 355px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.container-description{
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    background: transparent;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-last-challenges, .lenguajes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.filter{
+    font-weight: 700;
+}
+
+.ts, .git{
+    width: 20px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card{
+    max-width: 420px;
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px dashed var(--border);
+    /* border: 1px solid light-dark(var(--light),var(--dark)); */
+    transition: border 0.3s ease;
+}
+
+.icon-challenge{
+    width: 100px;
+}
+
+.text-button{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card:hover{
+    border: 1px solid light-dark(var(--dark),var(--light));
+    
+}
+
+.p-ts-title{
+    font-weight: 700;
+}
+
+footer{
+    padding-bottom: 20px;
+}
+
+.thanks {
+    font-size: 10px;
+    max-width: 750px;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.social-networks{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px 0;
+}
+
+.social{
+    all: inherit;
+    cursor: pointer;
+}
+
+@media (width <= 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    p{
+        font-size: 12px;
+    }
+    
+    .container{
+        width: 100%;
+    }
+
+    .mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .img{
+        display: none;
+    }
+
+    .photo{
+        display: none;
+    }
+
+    .photo-mobile{
+        width: 120px;
+        height: 100px;
+        display: block;
+        padding: 2px;
+    }
+
+    .challenge-img{
+        border-radius: 20px 20px 0 0;
+        /* width: fit-content 16/9; */
+        max-width: 100%;
+        
+    }
+
+    .landing-description, .last-challenge{
+        font: 15px;
+    }
+
+    .title{
+        width: fit-content;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .cards{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card{
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+    .p-ts{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .thanks{
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        font-size: 10px;
+    }
+
+}

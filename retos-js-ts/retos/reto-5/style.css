@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    /* - Weights: 400, 500, 600, 700 */
+    --font: "Poppins", sans-serif;
+
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Green-hover: #77e2b4;
+    --white: hsl(0, 0%, 100%);
+
+    /* ### Accent */
+
+    --Blue: hsl(248, 32%, 49%);
+
+    /* ### Neutral */
+
+    --Dark-Blue: hsl(249, 10%, 26%); 
+    --Grayish-Blue: hsl(246, 25%, 77%);
+
+    /* ### Shadow */
+    --shadow-try: hsla(249, 10%, 26%, 0.219);
+    --shadow-submit: hsl(154, 56%, 38%);
+}
+
+
+body{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+    background-color: var(--Red);
+    background-image: url(intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+}
+
+.container{
+    width: 1120px;
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+.text{
+    max-width: 500px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title{
+    width: 450px;
+    font-size: 48px;
+    line-height: 60px;
+    color: var(--white);
+}
+
+.paragraph{
+    color: var(--white);
+    font-size: 16px;
+}
+
+.container-form{
+    max-width: 540px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.try{
+    text-align: center;
+    background: var(--Blue);
+    color: var(--white);
+    font-weight: 600;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 0px var(--shadow-try);
+    margin-bottom: 20px;
+}
+
+.try span{
+    font-weight: 300;
+}
+
+.form{
+    max-height: 550px;
+    background: var(--white);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.input-name, .input-last-name, .input-email, .input-password, .inpud-submit, .input-submit{
+    width: 460px;
+    height: 50px;
+    position: relative;
+    margin: 10px;
+}
+
+.name::placeholder, .last-name::placeholder, .email::placeholder, .password::placeholder {
+    color: var(--Dark-Blue);
+    opacity: 0.8;
+}
+
+.name, .last-name, .email, .password, .submit{
+   width: 100%;
+   height: 50px;
+   padding: 20px;
+   border: 1px solid var(--Dark-Blue);
+   border-radius: 7px;
+   font-size: 16px;
+   color: var(--Dark-Blue);
+   font-weight: 600;
+}
+
+.error-img-name, .error-img-lastName, .error-img-email, .error-img-password{
+    position: absolute;
+    top: 13px;
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.error-name, .error-lastName, .error-email, .error-password{
+    font-size: 10px;
+    width: 100%;
+    text-align: end;
+    font-style: italic;
+    color: var(--Red);
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    bottom: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.submit{
+    padding: 5px;
+    color: var(--white);
+    border: none;
+    background: var(--Green);
+    box-shadow: 0px 5px 0px var(--shadow-submit);
+    cursor: pointer;
+}
+
+.submit:hover{
+    background: var(--Green-hover);
+}
+
+.submit:active{
+    background: var(--Green);
+}
+
+.team{
+    font-size: 11px;
+    color: var(--Grayish-Blue);
+    margin-top: 12px;
+}
+
+.team span{
+    color: var(--Green);
+    font-weight: 500;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 600px) {
+    .container{
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .text{
+        margin-bottom: 70px;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .paragraph{
+        text-align: center;
+    }
+
+    .try{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .container-form{
+        width: 100%;
+        height: auto;
+    }
+
+    .form{
+        padding: 20px;
+    }
+
+    .input-name, .input-last-name, .input-email, .input-password, .inpud-submit, .input-submit{
+        width: 100%;
+    }
+
+    .team{
+        text-align: center;
+        width: 80%;
+    }
+}

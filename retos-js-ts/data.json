@@ -1,0 +1,198 @@
+[
+    {
+        "url": "./retos/reto-29/index.html",
+        "imgUrl":"./retos/reto-29/pricing-component-with-toggle-master/design/desktop-preview.jpg",
+        "name": "Pricing component with toggle master",
+        "description": "Este reto consiste en diseñar una interfaz de precios con un interruptor que alterna entre tarifas anuales y mensuales, mostrando los valores correspondientes de manera dinámic",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-27/index.html",
+        "imgUrl":"./retos/reto-27/social-media-dashboard-with-theme-switcher-master/design/desktop-preview.jpg",
+        "name": "Social media dashboard with themeswitcher masterr",
+        "description": "Dashboard de redes sociales con modo oscuro, alternando dinámicamente entre temas claro y oscuro para una mejor experiencia visual.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-26/index.html",
+        "imgUrl":"./retos/reto-26/coding-bootcamp-testimonials-slider-master/design/desktop-preview.jpg",
+        "name": "Coding bootcamp testimonials slider",
+        "description": "Slider de testimonios interactivo con botones prev/next, actualizado dinámicamente con TypeScript.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-25/index.html",
+        "imgUrl":"./retos/reto-25/loopstudios-landing-page-main/design/desktop-preview.jpg",
+        "name": "Loopstudios landing page",
+        "description": "Landing page moderna con un diseño inmersivo que destaca experiencias de realidad virtual. Incluye navegación intuitiva, galería de proyectos y un diseño adaptable para diversos dispositivos.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-24/index.html",
+        "imgUrl":"./retos/reto-24/blogr-landing-page-main/design/desktop-preview.jpg",
+        "name": "Blogr landing page",
+        "description": "Landing page moderna con navegación desplegable, diseño responsivo y secciones informativas. Incluye menú interactivo, ilustraciones atractivas y llamado a la acción.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-23/index.html",
+        "imgUrl":"./retos/reto-23/interactive-pricing-component-main/design/desktop-design.jpg",
+        "name": "Interactive pricing component",
+        "description": "Componente de precios interactivo con control deslizante, facturación mensual/anual y diseño adaptable para una experiencia fluida.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-22/index.html",
+        "imgUrl":"./retos/reto-22/advice-generator-app-main/design/desktop-design.jpg",
+        "name": "Advice generator app",
+        "description": "Generador de consejos aleatorios con una interfaz dinámica, diseño adaptable y una experiencia interactiva para obtener nuevas frases motivacionales al instante",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-21/index.html",
+        "imgUrl":"./retos/reto-21/crowdfunding-product-page-main/design/desktop-preview.jpg",
+        "name": "Crowdfunding product page",
+        "description": "Landing page para una agencia de turismo espacial, con diseño responsivo y una experiencia interactiva para explorar destinos, tripulación y tecnología.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-20/index.html",
+        "imgUrl":"./retos/reto-20/sunnyside-agency-landing-page-main/design/design.png",
+        "name": "Sunnyside agency landing page",
+        "description": "Landing page interactiva sobre un planificador de gastos, con diseño responsivo y una experiencia dinámica para administrar presupuestos y categorías.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-19/index.html",
+        "imgUrl":"./retos/reto-19/space-tourism-website-main/designs/crew.jpg",
+        "name": "Tipspace tourism ebsite",
+        "description": "Una web interactiva de turismo espacial que ofrece una experiencia inmersiva para explorar destinos, tripulación y tecnología, con un diseño responsivo adaptado a móviles.",
+        "filter": "Intermediate"
+    },
+    {
+        "url": "./retos/reto-18/index.html",
+        "imgUrl":"./retos/reto-18/tip-calculator-app-main/design/desktop-design-empty.jpg",
+        "name": "Tip Calculator App",
+        "description": "Una calculadora interactiva que permite dividir el costo total de una cuenta, incluyendo un porcentaje de propina, entre varias personas. Proporciona validación de entradas y cálculos en tiempo real.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-17/index.html",
+        "imgUrl":"./retos/reto-17/time-tracking-dashboard-main/design/desktop-design.jpg",
+        "name": "Time tracking dashboard",
+        "description": "UUn panel de control interactivo que permite visualizar y gestionar el tiempo dedicado a diferentes actividades, con opciones de visualización diaria, semanal y mensual.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-16/index.html",
+        "imgUrl":"./retos/reto-16/intro-section-with-dropdown-navigation-main/design/desktop-design.jpg",
+        "name": "Intro section with dropdown navigation",
+        "description": "Un diseño responsivo que incluye un menú desplegable animado con JavaScript para mejorar la experiencia de navegación.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-15/index.html",
+        "imgUrl":"./retos/reto-15/expenses-chart-component-main/design/desktop-design.jpg",
+        "name": "Expenses chart component",
+        "description": "Un gráfico interactivo de gastos implementado con JavaScript para representar datos dinámicos de manera visual.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-14/index.html",
+        "imgUrl":"./retos/reto-14/interactive-card-details-form-main/design/desktop-design.jpg",
+        "name": "Interactive card details form",
+        "description": "Un formulario interactivo para completar detalles de tarjeta, con validación dinámica implementada en JavaScript.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-13/index.html",
+        "imgUrl":"./retos/reto-13/notifications-page-main/design/desktop-design.jpg",
+        "name": "Notifications page",
+        "description": "Una interfaz moderna para administrar notificaciones, donde se integran interacciones con JavaScript para marcar como leídas.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-12/index.html",
+        "imgUrl":"./retos/reto-12/news-homepage-main/design/desktop-design.jpg",
+        "name": "News homepage",
+        "description": "Una página de noticias con diseño adaptable y carga dinámica de contenido utilizando JavaScript.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-11/index.html",
+        "imgUrl":"./retos/reto-11/age-calculator-app-main/design/desktop-design.jpg",
+        "name": "Age calculator app",
+        "description": "Una pequeña aplicación que calcula la edad exacta con base en una fecha ingresada, implementada con lógica de JavaScript.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-10/index.html",
+        "imgUrl":"./retos/reto-10/newsletter-sign-up-with-success-message-main/design/desktop-design.jpg",
+        "name": "Newsletter sign up with success message",
+        "description": "Un formulario de suscripción a boletines con validaciones y mensajes de éxito dinámicos usando JavaScript.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-9/index.html",
+        "imgUrl":"./retos/reto-9/contact-form-main/design/desktop-design.jpg",
+        "name": "Contact form",
+        "description": "Un formulario de contacto funcional que incluye validaciones en tiempo real para campos requeridos.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-8/index.html",
+        "imgUrl":"./retos/reto-8/mortgage-repayment-calculator-main/design/desktop-design-empty.jpg",
+        "name": "Mortgage repayment calculator",
+        "description": "Una calculadora interactiva para pagos de hipoteca, desarrollada con lógica en JavaScript para cálculos precisos.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-7/index.html",
+        "imgUrl":"./retos/reto-7/product-list-with-cart-main/design/desktop-design-empty.jpg",
+        "name": "Product list with cart",
+        "description": "Una lista de productos con funcionalidad de carrito de compras dinámica implementada en JavaScript.",
+        "filter": "Junior"
+    },
+    {
+        "url": "./retos/reto-6/index.html",
+        "imgUrl":"./retos/reto-6/ping-coming-soon-page-master/design/desktop-design.jpg",
+        "name": "Ping single column coming soon page",
+        "description": "Una página 'Coming Soon' con funcionalidad para validar correos electrónicos usando JavaScript.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-5/index.html",
+        "imgUrl":"./retos/reto-5/intro-component-with-signup-form-master/design/desktop-design.jpg",
+        "name": "Intro component with sign-up form master",
+        "description": "Un componente de introducción con un formulario de registro que incluye validaciones dinámicas.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-4/index.html",
+        "imgUrl":"./retos/reto-4/base-apparel-coming-soon-master/design/desktop-design.jpg",
+        "name": "Base apparel coming soon master",
+        "description": "Una página promocional con validación de formulario para correos electrónicos, desarrollada con JavaScript.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-3/index.html",
+        "imgUrl":"./retos/reto-3/article-preview-component-master/design/desktop-design.jpg",
+        "name": "Article preview component master",
+        "description": "Un componente de vista previa de artículos con botones interactivos manejados por JavaScript.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-2/index.html",
+        "imgUrl":"./retos/reto-2/interactive-rating-component-main/design/desktop-design.jpg",
+        "name": "Interactive rating component",
+        "description": "Un componente de calificación interactiva que captura selecciones y las muestra dinámicamente.",
+        "filter": "Newbie"
+    },
+    {
+        "url": "./retos/reto-1/index.html",
+        "imgUrl":"./retos/reto-1/faq-accordion-main/design/desktop-design.jpg",
+        "name": "FAQ Accordion",
+        "description": "Una sección de preguntas frecuentes con acordeones dinámicos manejados por JavaScript.",
+        "filter": "Newbie"
+    }
+]

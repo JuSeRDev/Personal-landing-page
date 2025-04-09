@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <main>
+    <div class="container-splitter">
+      <p class="title">S P L I</p>
+      <p class="title">T T E R</p>
+    </div>
+    <div class="container-general">
+      <section class="container-inputs">
+        <div class="container-bill">
+          <label for="bill" class="label-bill">Bill</label>
+          <div class="input-container">
+            <input type="text" class="input-bill" name="bill" placeholder="0">
+            <img class="icon-dollar" src="tip-calculator-app-main/images/icon-dollar.svg" alt="">
+          </div>
+        </div>
+        <p class="title-select">Select Tip %</p>
+        <div class="percentage">
+          <p class="porcentage-number">5%</p>
+          <p class="porcentage-number">10%</p>
+          <p class="porcentage-number">15%</p>
+          <p class="porcentage-number">25%</p>
+          <p class="porcentage-number">50%</p>
+          <input type="text" placeholder="Custom" class="custom"></input>
+        </div>
+        <div class="container-number-of-people">
+          <div class="label-container">
+            <label class="label-number" for="number">Number of People</label>
+            <p class="error">Can't be zero</p>
+          </div>
+          <div class="input-container">
+            <input type="text" class="number-people" name="number" placeholder="0">
+            <img class="icon-person" src="tip-calculator-app-main/images/icon-person.svg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="container-amount">
+        <div class="container-amount-total">
+          <div class="tip-amount">
+            <div class="tip-amount-info">
+              <p class="amount">Tip Amount</p>
+              <p class="t-person">/ person</p>
+            </div>
+            <p class="result-tip-amount">$<span class="t-a">0.00</span></p>
+          </div>
+          <div class="container-total">
+            <div class="container-total-div">
+              <p class="total-text">Total</p>
+              <p class="t-person">/ person</p>
+            </div>
+            <p class="total">$<span class="t-t">0.00</span></p>
+          </div>
+        </div>
+        <p class="reset">RESET</p>
+      </section>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">JuSeRDev</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

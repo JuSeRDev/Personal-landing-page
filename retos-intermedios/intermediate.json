@@ -1,0 +1,9 @@
+[
+  {
+    "url": "./retos/reto-1/index.html",
+    "imgUrl":"./retos/reto-1/interactive-comments-section-main/design/desktop-preview.jpg",
+    "name": "Interactive comments section",
+    "description": "Texto de 200 caracterers",
+    "filter": "Intermediate"
+  }
+]

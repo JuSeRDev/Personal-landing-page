@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+:root{
+
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-fraunces: 'Fraunces', serif;
+
+    /*Primary*/
+
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /*Neutral*/
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    
+}
+
+.container {
+    margin: 1em;
+    background: var(--White);
+    border-radius: 15px;
+}
+
+.art {
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+p {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--Dark-cyan);
+}
+
+h1 {
+   font-family: var(--font-fraunces);
+}
+
+.card {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 30px;
+}
+
+.card-info p {
+    line-height: 1.5em;
+}
+
+.card-money {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    color: var(--Dark-cyan);
+}
+
+.card-money h1 {
+    margin-right: 1em;
+    font-size: 2em;
+}
+
+.card a{
+    text-decoration: none;
+    color: var(--White);
+    font-family: var(--font-montserrat);
+    text-align: center;
+    padding: 1em;
+    background: var(--Dark-cyan);
+    border-radius: 10px;
+}
+
+.card a:hover{
+    background: var(--Very-dark-blue);
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (min-width:600px) {
+    .container{
+        display: flex;
+        width: 700px;
+        height: 525px;
+
+    }
+
+    .art {
+        width: 350px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+
+    .card {
+        padding: 2em;
+        justify-content: space-around;
+    }
+
+    .card-info h1 {
+        font-size: 2.5em;
+        line-height: 1em;
+    }
+
+    .card-info p {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Weights: 500, 700 */
+    --font-family: "Manrope", sans-serif;
+
+    /* ## Colors */
+
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: #ecf2f8;
+    --shadow: #daedfe82;
+
+    /* ### Body Copy */
+    /* Font size: 13px */
+}
+
+body{
+    font-family: var(--font-family);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.container{
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px var(--shadow);
+    background-color: white;
+}
+
+/* IMAGE */
+
+.image{
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+
+.drawers{
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* IMAGE END */
+
+/* INFO GENERAL */
+
+.info-general{
+    width: 450px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.title{
+    font-size: 22px;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.paragraph{
+    font-size: 14px;
+    color: var(--Grayish-Blue);
+}
+
+
+/* END INFO GENERAL */
+
+/* INFO MICHELLE */
+
+.info-michelle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 40px;
+    width: 100%;
+}
+
+.michelle-block{
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+}
+
+.michelle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.michelle-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name{
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.date{
+    color: var(--Grayish-Blue);
+    font-size: 13px;
+}
+
+.icon-share{
+    background-color: var(--Light-Grayish-Blue);
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-share path{
+    fill: #6E8098;
+}
+
+.icon-share:hover path{
+    fill: var(--Light-Grayish-Blue);
+}
+
+.icon-share:hover{
+    background-color: var(--Very-Dark-Grayish-Blue);
+}
+
+.icon-share2{
+    display: none;
+}
+
+
+/* END INFO MICHELLE */
+
+.info-share{
+    display: none;
+    width: 200px;
+    height: 50px;
+    background-color: var(--Desaturated-Dark-Blue);
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    position:absolute;
+    right: -52px;
+    top: 140px;
+    padding: 25px;
+}
+
+.active{
+    display: flex;
+}
+
+
+.info-share::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--Desaturated-Dark-Blue);
+    bottom: -9px; 
+    left: 50%; 
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.icons-redes{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.share{
+    color: var(--Grayish-Blue);
+    font-size: 13px;
+}
+
+.redes{
+    width: 13px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* MEDIA QUERY */
+
+@media (max-width: 600px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 500px;
+    }
+
+    .image{
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .drawers{
+        width: 100%;
+        height: 200px;
+    }
+
+    .info-general{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+    }
+
+    .title{
+        font-size: 15px;
+    }
+
+    .paragraph{
+        font-size: 12.4px;
+    }
+
+    .michelle-block{
+        width: 160px;
+    }
+
+    .michelle-text{
+        justify-content: space-around;
+    }
+
+    .name{
+        font-size: 12px;
+    }
+
+    .date{
+        font-size: 11px;
+    }
+
+    .info-share{
+        align-items: start;
+        top: 220px;
+        width: 100%;
+        height: 80px;
+        left: 0;
+        border-radius: 0px 0px 10px 10px;
+        padding-top: 20px;
+    }
+
+    .share{
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .redes{
+        width: 19px;
+    }
+
+    .icons-redes{
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    .info-share::after{
+        display: none;
+    }
+
+    .icon-share2{
+        display: flex;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: var(--Grayish-Blue);
+        margin-left: 30px;
+    }
+
+    .icon-share2 path{
+        fill: var(--Light-Grayish-Blue);
+    }
+    
+    .icon-share2:hover path{
+        fill: var(--Light-Grayish-Blue);
+    }
+    
+    .icon-share2:hover{
+        background-color: var(--Very-Dark-Grayish-Blue);
+    }
+
+}

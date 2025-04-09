@@ -1,0 +1,104 @@
+@import url(global.css);
+
+main{
+    padding: 300px 167px 145px;
+}
+
+.main-title{
+    font-size: 65px;
+    padding: 70px 0 0;
+    position: relative;
+}
+
+.main-title::before{
+    content: "";
+    width: 150px;
+    height: 1px;
+    background: var(--Dark-Grayish-Violet);
+    position: absolute;
+    top: 0;
+}
+
+.cards-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+    padding: 90px 0 150px;
+}
+
+.card{
+    width: 330px;
+}
+
+.card-title{
+    font-size: 30px;
+    padding: 35px 0 20px;
+    color: var(--Very-Dark-Viole);
+    font-weight: 500;
+}
+
+.card-text{
+    color: var(--Dark-Grayish-Violet);
+}
+
+.banner{
+    padding: 70px 80px;
+    background: var(--Dark-Violet);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../insure-landing-page-master/images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.banner-title{
+    color: var(--Very-Light-Gray);
+    font-size: 55px;
+    width: 480px;
+}
+
+.banner-button{
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.banner-button:hover{
+    background: var(--Very-Light-Gray);
+}
+
+
+@media (width <= 600px) {
+    main{
+        padding: 140px 25px 140px;
+        text-align: center;
+    }
+
+    .main-title{
+        font-size: 50px;
+    }
+
+    .main-title::before{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cards-container{
+        justify-content: center;
+    }
+
+    .banner{
+        flex-direction: column;
+        padding: 75px 40px;
+        gap: 40px;
+        background-image: url(../insure-landing-page-master/images/bg-pattern-how-we-work-mobile.svg);
+    }
+
+    .banner-title{
+        font-size: 45px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+  <section class="sectionSix">
+    <div class="sectionSixDiv">
+      <div class="messageSentDiv">
+        <img src="contact-form-main/assets/images/icon-success-check.svg" alt="" class="checkFinal">
+        <p class="messageSent">Message Sent!</p>
+      </div>
+      <p class="textTanks">Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </section>
+  
+  <div class="containerGeneral">
+
+    <div class="container">
+      <p class="contactUs">Contact Us</p>
+      <section class="sectionOne">
+        <div class="sectionOneDiv1">
+          <label for="text" class="labelName">First Name *</label>
+          <input type="text" class="inputName">
+          <p class="error errorName">This field is required</p>
+        </div>
+        <div class="sectionOneDiv2">
+          <label for="text" class="labelLastName">Last Name *</label>
+          <input type="text" class="inputLastName">
+          <p class="error errorLastname">This field is required</p>
+        </div>
+      </section>
+      <section class="sectionTwo">
+        <label for="email" class="labelEmail">Email Address *</label>
+        <input type="email" class="inputEmail">
+        <p class="error errorEmail">Please enter a valid email address</p>
+      </section>
+      
+      <!-- This field is required --> <!-- !NO REUCERDO SI FUE QUE LO DUPLIQUE -->
+      <section class="sectionThree">
+        <p class="queryType">Query Type *</p>
+        <div class="queryTypeDiv">
+          <div class="ge">
+            <div class="outerCircle">
+              <div class="innerCircle"></div>
+            </div>
+            <p class="generalEnquiry">General Enquiry</p>
+          </div>
+          <div class="sr">
+            <div class="outerCircle">
+              <div class="innerCircle"></div>
+            </div>
+            <p class="supportRequest">Support Request</p>
+          </div>
+        </div>
+        <p class="error errorQueryType">Please select a query type</p>
+      </section>
+      
+      <section class="sectionFour">
+        <label for="message" class="message">Message</label>
+        <textarea name="message" id="" class="textarea"></textarea>
+        <p class="error errorMessage">This field is required</p>
+      </section>
+      <section class="sectionFive">
+        <div class="SectitionFiveDiv">
+          <div class="checkbox">
+            <img src="contact-form-main/assets/images/icon-checkbox-check.svg" alt="check" class="check">
+          </div>
+          <p class="checkboxText">I consent to being contacted by the team</p>
+        </div>
+        <p class="error errorCheckbox">To submit this form, please consent to being contacted</p>
+      </section>
+      
+      <p class="button">Submit</p>
+
+      <!-- <section class="sectionSix">
+        <div class="sectionSixDiv">
+          <div class="messageSentDiv">
+            <img src="contact-form-main/assets/images/icon-success-check.svg" alt="" class="checkFinal">
+            <p class="messageSent">Message Sent!</p>
+          </div>
+          <p class="textTanks">Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+      </section> -->
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/JuSeRDev/09-JS-Challenge">JuSeRDev</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

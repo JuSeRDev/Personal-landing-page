@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-family: "Red Hat Text", sans-serif;
+
+    --Red: hsl(14, 86%, 42%);
+    --Green: hsl(159, 69%, 38%);
+    
+    --Rose-50: hsl(20, 50%, 98%);
+    --Rose-100: hsl(13, 31%, 94%);
+    --Rose-200: hsl(0, 2%, 90%);
+    --Rose-300: hsl(14, 25%, 72%);
+    --Rose-400: hsl(7, 20%, 60%);
+    --Rose-500: hsl(12, 20%, 44%);
+    --Rose-900: hsl(14, 65%, 9%);
+    
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--Rose-100);
+    font-family: var(--font-family);
+}
+
+.container{
+    display: flex;    
+    align-items: self-start;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.title{
+    margin-bottom: 30px;
+}
+
+.productsCards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.containerCards{
+    width: 250px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.containerCardsImgs{
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 25px;
+}
+
+.button1, .button2{
+    width: 160px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    bottom: 20px;
+}
+
+.button1{
+    border: 1px solid var(--Green);
+    border-radius: 25px;
+    background: var(--Rose-50);
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+}
+
+.button1:hover{
+    color: var(--Red);
+    border: 1px solid var(--Red);
+}
+
+
+.button2{
+    display: none;
+    justify-content: space-around;
+    background: var(--Red);
+    border-radius: 25px;
+    color: var(--Rose-50);
+    font-size: 13px;
+}
+
+.iconPlus, .iconMenus{
+    border: 1px solid var(--Rose-50);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    fill: var(--Rose-50);
+}
+.iconPlus{
+    padding-left: 4px;
+}
+
+.iconPlus:hover, .iconMenus:hover{
+    border: none;
+    background: var(--Rose-50);
+    fill: var(--Red);
+}
+
+.containerCardsTexts{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.category{
+    font-size: 14px;
+}
+
+.name{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.price{
+    font-size: 15px;
+    color: var(--Red);
+    font-weight: 500;
+}
+
+.buyContanierGeneral{
+    width: 450px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--Rose-50);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.cokeContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coke{
+    width: 200px;
+    height: auto;
+    margin: 20px 0 0;
+}
+
+.buysContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.buys{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--Rose-100);
+}
+
+.yourCard{
+    color: var(--Red);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.titleProduct{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    
+}
+
+.buyName{
+    font-size: 16pxpx;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.productsBuys{
+    display: flex;
+    gap: 5px;
+}
+
+.buysCount, .buysPrice, .buysTotalPrice{
+    font-size: 15px;
+}
+
+.buysCount{
+    color: var(--Red);
+    font-weight: 500;
+}
+
+
+.buysPrice{
+    color: var(--Rose-400);
+}
+
+.textBuysEmptyContainer{
+    margin-bottom: 50px;
+    color: var(--Rose-400);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.total{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.orderTotal{
+    color: var(--Rose-900);
+    font-size: 10px;
+}
+
+.message{
+    display: none;
+    width: 95%;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--Rose-100);
+}
+
+.messageTree{
+    color: var(--Rose-500);
+}
+
+.messageTree span{
+    color: var(--Rose-900);
+}
+
+.comfirmButton{
+    display: none;
+    background: var(--Red);
+    width: 100%;
+    color: var(--Rose-50);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.comfirmButton:hover{
+    background: var(--Rose-500);
+}
+
+.comfirmButton:active{
+    background: var(--Green);
+}
+
+.background{
+    width: 200vw;
+    height: 130vh;
+    background: rgba(0, 0, 0, 0.419);
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectedContainer{
+    background: var(--Rose-50);
+    border-radius: 20px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buysContainerConfirm{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--Rose-100);
+    border-radius: 15px 15px 0 0;
+}
+
+.imageCheck{
+    width: 90%;
+    padding: 30px 0;
+}
+
+.orderConfirmed{
+    width: 90%;
+    font-size: 40px;
+}
+
+.textConfirm{
+    width: 90%;
+    padding: 15px 0 30px;
+    font-size: 10px;
+    color: var(--Rose-400);
+}
+
+.buys2{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.containerCardsImgsConfirm{
+    width: 60px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.titleProduct2{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    border-bottom: 1px solid var(--Rose-200);
+}
+.productsBuys2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.productsBuysContainer2{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.buyName2{
+    color: var(--Rose-900);
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.buysCount2{
+    color: var(--Red);
+    margin-right: 20px;
+    font-size: 10px;
+}
+
+.buysPrice2{
+    color: var(--Rose-400);
+}
+
+.buysTotalPrice2{
+    color: var(--Rose-900);
+    font-weight: 600;
+}
+
+.StarNewOrder{
+    padding: 15px;
+    background: var(--Red);
+    margin: 30px;
+    width: 90%;
+    border-radius: 25px;
+    color: var(--Rose-50);
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.StarNewOrder:hover{
+    background: var(--Rose-500);
+}
+
+.containerTotal2{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: var(--Rose-100);
+    border-radius: 0px 0px 15px 15px;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 400px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+    }
+
+    .container{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerCardsImgs{
+        width: 330px;
+    }
+
+    .productsContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productsCards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerCards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerCardsTexts{
+        width: 300px;
+        align-items: flex-start;
+    }
+
+    .buyContanierGeneral{
+        width: 330px;
+    }
+
+    .messageTree{
+        font-size: 14px;
+    }
+
+    .background{
+        height: 100%;
+        position: relative;
+    }
+
+    .selectedContainer{
+        width: 400px;
+        position: absolute;
+        bottom: 0;
+    }
+}
