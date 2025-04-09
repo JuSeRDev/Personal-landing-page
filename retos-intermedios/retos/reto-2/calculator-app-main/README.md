@@ -1,6 +1,6 @@
-# Frontend Mentor - Interactive comments section
+# Frontend Mentor - Calculator app
 
-![Design preview for the Interactive comments section coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -8,34 +8,22 @@ Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, you need a strong understanding of HTML, CSS and JavaScript.**
+**To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
 
 ## The challenge
 
-Your challenge is to build out this interactive comments section and get it looking as close to the design as possible.
+Your challenge is to build out this calculator app and get it looking as close to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-We provide the data in a local `data.json` file, so use that to populate the content on the first load. If you want to take it up a notch, feel free to build this as a full-stack CRUD application!
-
 Your users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Create, Read, Update, and Delete comments and replies
-- Upvote and downvote comments
-- **Bonus**: If you're building a purely front-end project, use `localStorage` to save the current state in the browser that persists when the browser is refreshed.
-- **Bonus**: Instead of using the `createdAt` strings from the `data.json` file, try using timestamps and dynamically track the time since the comment or reply was posted.
+- See the size of the elements adjust based on their device's screen size
+- Perform mathematical operations like addition, subtraction, multiplication, and division
+- Adjust the color theme based on their preference
+- **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
 Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
-
-### Expected behaviour
-
-- First-level comments should be ordered by their score, whereas nested replies are ordered by time added.
-- Replying to a comment adds the new reply to the bottom of the nested replies within that comment.
-- A confirmation modal should pop up before a comment or reply is deleted.
-- Adding a new comment or reply uses the `currentUser` object from within the `data.json` file.
-- You can only edit or delete your own comments and replies.
 
 ## Where to find everything
 
@@ -95,7 +83,7 @@ There are multiple places you can share your solution:
 
 We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+The more specific you are with your questions, the more likely it is that another member of the community will give you feedback.
 
 ## Got feedback for us?
 
