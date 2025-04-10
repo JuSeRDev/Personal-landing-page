@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+   /* ### Theme 1 */
+
+  /* #### Backgrounds */
+
+  --Very-dark-desaturated-blue-main-background: hsl(222, 26%, 31%);
+  --Very-dark-desaturated-blue-toggle-background-keypad-background: hsl(223, 31%, 20%);
+  --Very-dark-desaturated-blue-screen-background: hsl(224, 36%, 15%);
+
+  /* #### Keys */
+
+  --Desaturated-dark-blue-key-background: hsl(225, 21%, 49%);
+  --Desaturated-dark-blue-key-shadow: hsl(224, 28%, 35%);
+  --hover-reset: #A5B2DD;
+
+  --Red-key-background-toggle: hsl(6, 63%, 50%);
+  --Dark-red-key-shadow: hsl(6, 70%, 34%);
+  --hover-igual: #E87462;
+
+  --Light-grayish-orange-key-background: hsl(30, 25%, 89%);
+  --Grayish-orange-key-shadow: hsl(28, 16%, 65%);
+
+  /* #### Text */
+
+  --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+  --White: hsl(0, 0%, 100%);
+
+  /* ### Theme 2 */
+
+  /* #### Backgrounds */
+
+  --Light-gray-main-background: hsl(0, 0%, 90%);
+  --Grayish-red-toggle-background-keypad-background: hsl(0, 5%, 81%);
+  --Very-light-gray-screen-background: hsl(0, 0%, 93%);
+
+  /* #### Keys */
+
+  --Dark-moderate-cyan-key-background: hsl(185, 42%, 37%);
+  --Very-dark-cyan-key-shadow: hsl(185, 58%, 25%);
+
+  --Orange-key-background-toggle: hsl(25, 98%, 40%);
+  --Dark-orange-key-shadow: hsl(25, 99%, 27%);
+
+  --Light-grayish-yellow-key-background: hsl(45, 7%, 89%);
+  --Dark-grayish-orange-key-shado: hsl(35, 11%, 61%);
+
+  /* #### Text */
+
+  --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+  --White-text: hsl(0, 0%, 100%);
+
+  /* ### Theme 3 */
+
+  /* #### Backgrounds */
+
+  --Very-dark-violet-main-background: hsl(268, 75%, 9%);
+  --Very-dark-violet-toggle-background-keypad-background-screen-background: hsl(268, 71%, 12%);
+
+  /* #### Keys */
+
+  --Dark-violet-key-background: hsl(281, 89%, 26%);
+  --Vivid-magenta-key-shadow: hsl(285, 91%, 52%);
+
+  --Pure-cyan-key-background-toggle: hsl(176, 100%, 44%);
+  --Soft-cyan-key-shadow: hsl(177, 92%, 70%);
+
+  --Very-dark-violet-key-background: hsl(268, 47%, 21%);
+  --Dark-magenta-key-shadow: hsl(290, 70%, 36%);
+
+  /* #### Text */
+
+  --Light-yellow: hsl(52, 100%, 62%);
+  --Very-dark-blue: hsl(198, 20%, 13%);
+  --White-text: hsl(0, 0%, 100%);
+
+  /* ## Typography */
+
+  --font-family: "League Spartan", sans-serif;
+
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--Very-dark-desaturated-blue-toggle-background-keypad-background);
+  font-family: var(--font-family);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calc{
+  color: var(--White-text);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.txt-theme{
+  color: var(--White-text);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.info-theme{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.theme-color{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  color: var(--White-text);
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+.theme-range{
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  background: var(--Very-dark-desaturated-blue-screen-background);
+  border-radius: 25px;
+  display: flex;
+}
+
+.theme-range-input{
+  width: 100%;
+  appearance: none; 
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.theme-range-input::-webkit-slider-thumb{
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--Red-key-background-toggle);
+  transition: background 0.3s ease;
+}
+
+.theme-range-input::-webkit-slider-thumb:hover{
+  background: var(--hover-igual);
+}
+
+
+.theme-range-input::-moz-range-thumb{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--Red-key-background-toggle);
+}
+
+.result-value{
+  font-size: 60px;
+  text-align: right;
+  font-weight: 700;
+  color: var(--White-text);
+}
+
+.result-container{
+  width: 100%;
+  padding: 30px;
+  background: var(--Very-dark-desaturated-blue-screen-background);
+  border-radius: 20px;
+}
+
+.container-calc{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+  background: var(--Very-dark-desaturated-blue-main-background);
+  border-radius: 20px;
+}
+
+.container-line{
+  display: flex;
+  gap: 10px;
+}
+
+.btn{
+  font-size: 32px;
+  font-weight: 700;
+  width: 100px;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  color: var(--Very-dark-grayish-yellow);
+  background: var(--Light-grayish-orange-key-background);
+  border-bottom: 5px solid var(--Grayish-orange-key-shadow);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn:hover{
+  background: var(--White);
+}
+
+.btn:active{
+  background: var(--Grayish-orange-key-shadow);
+}
+
+.reset, .igual{
+  width: 50%;
+}
+
+.reset, .del{
+  background: var(--Desaturated-dark-blue-key-background);
+  border-bottom-color: var(--Desaturated-dark-blue-key-shadow);
+  color: var(--White-text);
+  text-transform: uppercase;
+}
+
+.reset:hover, .del:hover{
+  background: var(--hover-reset);
+}
+
+.reset:active, .del:active{
+  background: var(--Desaturated-dark-blue-key-shadow);
+}
+
+.igual{
+  background: var(--Red-key-background-toggle);
+  border-bottom-color: var(--Dark-red-key-shadow);
+  color: var(--White-text);
+}
+
+.igual:hover{
+  background: var(--hover-igual);
+}
+
+.igual:active{
+  background: var(--Dark-red-key-shadow);
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 50px;}
+.attribution a { color: hsl(228, 45%, 44%); }

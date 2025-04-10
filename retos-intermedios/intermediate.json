@@ -3,7 +3,7 @@
     "url": "./retos/reto-1/index.html",
     "imgUrl":"./retos/reto-1/calculator-app-main/design/desktop-design-theme-1.jpg",
     "name": "Calculator app ",
-    "description": "Texto de 200 caracterers",
+    "description": "Calculadora funcional con cambio de tema dinámico. Permite operaciones básicas, botón de borrar, reinicio y selector de tres estilos visuales.",
     "filter": "Intermediate"
   }
 ]
