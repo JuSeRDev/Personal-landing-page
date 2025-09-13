@@ -6,7 +6,7 @@
   
   ### *Portfolio interactivo de proyectos Frontend Mentor*
   
-  [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen?style=for-the-badge&logo=github)](https://juserdev.github.io/Landing-challenge-FM/)
+  [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen?style=for-the-badge&logo=github)](https://juserdev.github.io/Personal-landing-page/)
   [![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-Profile-blue?style=for-the-badge&logo=frontendmentor)](https://www.frontendmentor.io/)
   
 </div>
