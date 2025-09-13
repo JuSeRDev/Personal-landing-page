@@ -1,5 +1,12 @@
 [
   {
+    "url": "https://juserdev.github.io/trusk/",
+    "imgUrl":"./retos/reto-2/trusk/img/trusk-pages.png",
+    "name": "TRUSK - Landing Page Multiidioma para Memecoin",
+    "description": "Landing page moderna con narrativa única de memecoin. Incluye cambio de idioma dinámico ES/EN, diseño responsivo, navegación suave y integración con Uniswap.",
+    "filter": "Intermediate"
+  },
+  {
     "url": "./retos/reto-1/index.html",
     "imgUrl":"./retos/reto-1/calculator-app-main/design/desktop-design-theme-1.jpg",
     "name": "Calculator app ",

@@ -1,4 +1,4 @@
-import { Data } from "./retos-js-ts/app";
+import { Data } from "./retos-intermedios/app";
 
 namespace home {
     const img1 = document.querySelector(".img-1") as HTMLImageElement
@@ -16,11 +16,11 @@ namespace home {
     const url1 = document.querySelector(".url1") as HTMLAnchorElement
     const url2 = document.querySelector(".url2") as HTMLAnchorElement
 
-    fetch("./retos-js-ts/data.json")
+    fetch("./retos-intermedios/intermediate.json")
         .then((response)=> response.json())
         .then((data: Data[]) =>{
-            img1.src = `./retos-js-ts/${data[0].imgUrl}`
-            img2.src = `./retos-js-ts/${data[1].imgUrl}`
+            img1.src = `./retos-intermedios/${data[0].imgUrl}`
+            img2.src = `./retos-intermedios/${data[1].imgUrl}`
 
             t1.innerText = `${data[0].name}`
             t2.innerText = `${data[1].name}`
@@ -31,8 +31,9 @@ namespace home {
             f1.innerText = `${data[0].filter}`
             f2.innerText = `${data[1].filter}`
 
-            url1.href = `./retos-js-ts/${data[0].url}`
-            url2.href = `./retos-js-ts/${data[1].url}`
+            url1.href = `./retos-intermedios/${data[0].url}`
+            url2.href = `./retos-intermedios/${data[1].url}`
         })
         .catch((error) => console.log("error al cargar los datos", error))
 }
+
